@@ -1,0 +1,3 @@
+C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/SSD.dir
+C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/ZERO_CHECK.dir

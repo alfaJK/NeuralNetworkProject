@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\IOData\Images.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\IOData\Matrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\IOData\Tensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralController\Conv_neural.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralController\Setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralModules\ActivationLayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralModules\Conv_Layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralModules\NeuralNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralModules\Neural_Module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\src\NeuralModules\Pooling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{20CEBCCA-E9D2-398A-9551-C575627D95AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

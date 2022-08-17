@@ -1,0 +1,10 @@
+^C:\USERS\ДАНИИЛ\DESKTOP\ANY PROJECTS\NEURALNETWORKPROJECT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject" "-BC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build" --check-stamp-file "C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

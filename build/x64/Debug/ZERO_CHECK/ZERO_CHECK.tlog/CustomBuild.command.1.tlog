@@ -1,0 +1,10 @@
+^C:\USERS\ДАНИИЛ\DESKTOP\ANY PROJECTS\NEURALNETWORKPROJECT\BUILD\CMAKEFILES\A9E998C2653F0B57308A3ED80D78433B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject" "-BC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/SSD.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
