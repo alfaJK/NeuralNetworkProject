@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.23)
+project(CUDA_test LANGUAGES CXX CUDA)
+
+enable_language(CUDA)
+
+file(GLOB SOURCE_FILES "*.CU")
+file(GLOB HEADER_FILES "${PROJECT_SOURCE_DIR}/includes/CUDA/*.h")
+
+add_library(CUDA_test SHARED ${SOURCE_FILES} ${HEADER_FILES})
+include_directories("../../includes")

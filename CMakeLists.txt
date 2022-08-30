@@ -3,12 +3,14 @@ cmake_minimum_required(VERSION 3.23)
 
 set (CMAKE_C_COMPILER_WORKS 1)
 set (CMAKE_CXX_COMPILER_WORKS 1)
-set(CMAKE_C_COMPILER "C:/gcc/bin/gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/gcc/bin/g++.exe")
 
 project(SSD)
 
 set(SOURCE_FILES main)
+
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
 
 file(GLOB SOURCE_FILES
 
@@ -17,8 +19,8 @@ file(GLOB SOURCE_FILES
     "${PROJECT_SOURCE_DIR}/src/NeuralModules/*.cpp"
     "*.cpp"
 )
-
+add_subdirectory("src/CUDA")
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
-
+target_link_libraries(${PROJECT_NAME}  CUDA_test)
 include_directories("includes")
 include_directories("lib")

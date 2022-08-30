@@ -1,6 +1,6 @@
-^C:\USERS\ДАНИИЛ\DESKTOP\ANY PROJECTS\NEURALNETWORKPROJECT\BUILD\CMAKEFILES\A9E998C2653F0B57308A3ED80D78433B\GENERATE.STAMP.RULE
+^D:\GIT_RPS\ANYPROJECTS\NEURALNETWORKPROJECT\BUILD\CMAKEFILES\992FF79D3F9128C0F60F6252AA29F06D\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject" "-BC:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/SSD.sln"
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/GIT_RPS/AnyProjects/NeuralNetworkProject -BD:/GIT_RPS/AnyProjects/NeuralNetworkProject/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/SSD.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

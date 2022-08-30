@@ -1,119 +1,257 @@
 The system is: Windows - 10.0.19044 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/gcc/bin/gcc.exe 
+Compiler:  
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
-(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
-
-Сборка начата 21.07.2022 20:45:18.
-Проект "C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+MSBuild version 17.3.0+f67e3d35e for .NET Framework
+Сборка начата 30.08.2022 15:31:46.
+Проект "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "Debug\".
   Создание каталога "Debug\CompilerIdC.tlog\".
 InitializeBuildStatus:
   Создание "Debug\CompilerIdC.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
   CMakeCCompilerId.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdC\CompilerIdC.exe
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdC\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x64\cl.exe
+  CMAKE_C_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x64\cl.exe
 FinalizeBuildStatus:
   Файл "Debug\CompilerIdC.tlog\unsuccessfulbuild" удаляется.
   Обращение к "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Сборка проекта "C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+Сборка проекта "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
 
 Сборка успешно завершена.
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:01.16
+Прошло времени 00:00:01.59
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/3.23.0-rc4/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/gcc/bin/g++.exe 
+Compiler:  
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
-(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
-
-Сборка начата 21.07.2022 20:45:19.
-Проект "C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+MSBuild version 17.3.0+f67e3d35e for .NET Framework
+Сборка начата 30.08.2022 15:31:48.
+Проект "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "Debug\".
   Создание каталога "Debug\CompilerIdCXX.tlog\".
 InitializeBuildStatus:
   Создание "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
   CMakeCXXCompilerId.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdCXX\CompilerIdCXX.exe
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCXX\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
-  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x64\cl.exe
+  CMAKE_CXX_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x64\cl.exe
 FinalizeBuildStatus:
   Файл "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" удаляется.
   Обращение к "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Сборка проекта "C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\3.23.0-rc4\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+Сборка проекта "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
 
 Сборка успешно завершена.
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:01.30
+Прошло времени 00:00:01.07
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/3.23.0-rc4/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCXX/CompilerIdCXX.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp
+Change Dir: D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_535f9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
-(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
-
-  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31332 для x64
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2f943.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.0+f67e3d35e for .NET Framework
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31629 для x64
   CMakeCCompilerABI.c
   (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_535f9.dir\Debug\\" /Fd"cmTC_535f9.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
-  cmTC_535f9.vcxproj -> C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_535f9.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2f943.dir\Debug\\" /Fd"cmTC_2f943.dir\Debug\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c"
+  cmTC_2f943.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_2f943.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Даниил/Desktop/Any Projects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp
+Change Dir: D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2022/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_afdb1.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine версии 17.2.1+52cd2da31 для .NET Framework
-(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
-
-  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.32.31332 для x64
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_f62a0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.0+f67e3d35e for .NET Framework
+  Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.33.31629 для x64
   CMakeCXXCompilerABI.cpp
   (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_afdb1.dir\Debug\\" /Fd"cmTC_afdb1.dir\Debug\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_afdb1.vcxproj -> C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_afdb1.exe
+  cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f62a0.dir\Debug\\" /Fd"cmTC_f62a0.dir\Debug\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_f62a0.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_f62a0.exe
 
+
+
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler:  
+Build flags: 
+Id flags: --keep;--keep-dir;tmp -v
+
+The output was:
+0
+MSBuild version 17.3.0+f67e3d35e for .NET Framework
+Сборка начата 30.08.2022 15:31:52.
+Проект "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" в узле 1 (целевые объекты по умолчанию).
+PrepareForBuild:
+  Создание каталога "Debug\".
+  Создание каталога "Debug\CompilerIdCUDA.tlog\".
+InitializeBuildStatus:
+  Создание "Debug\CompilerIdCUDA.tlog\unsuccessfulbuild", так как было задано "AlwaysCreate".
+AddCudaCompileDeps:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D__CUDACC_VER_MAJOR__=11 /D__CUDACC_VER_MINOR__=7 /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" /I. /FIcuda_runtime.h /c D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CMakeCUDACompilerId.cu 
+Проект "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (1) выполняет сборку "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (1:2) в узле 1 (целевые объекты CudaBuildCore).
+CudaBuildCore:
+  Compiling CUDA source file CMakeCUDACompilerId.cu...
+  Создание каталога "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\x64\Debug".
+  cmd.exe /C "C:\Users\Даниил\AppData\Local\Temp\tmp2288536c88ee4408aa50bd6dad776168.cmd"
+  "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CMakeCUDACompilerId.cu"
+  
+  D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -v -g  -D_MBCS -Xcompiler "/EHsc /W0 /nologo /Od /FdDebug\vc143.pdb /FS /Zi /RTC1 /MDd " -o D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CMakeCUDACompilerId.cu" 
+  #$ _NVVM_BRANCH_=nvvm
+  #$ _SPACE_= 
+  #$ _CUDART_=cudart
+  #$ _HERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin
+  #$ _THERE_=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin
+  #$ _TARGET_SIZE_=
+  #$ _TARGET_DIR_=
+  #$ _TARGET_SIZE_=64
+  #$ _WIN_PLATFORM_=x64
+  #$ TOP=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/..
+  #$ NVVMIR_LIBRARY_DIR=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../nvvm/libdevice
+  #$ PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../nvvm/bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../lib;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64;;C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x86;;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\tools;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\ide;C:\Program Files (x86)\HTML Help Workshop;;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64;C:\Windows\Microsoft.NET\Framework64\v4.0.30319\;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\libnvvp;;C:\Program Files\OpenJDK\jdk-8.0.262.10-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin;C:\gcc\bin;C:\gcc\libexec\gcc\x86_64-w64-mingw32\11.2.0;C:\Users\─рэшшы\gcc\bin;C:\Users\─рэшшы\gcc\libexec\gcc\x86_64-w64-mingw32\11.2.0;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\ImageMagick;D:\ImageMagick-7.0.11-Q16-HDRI;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;D:\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\NVIDIA Corporation\Nsight Compute 2022.2.1\;C:\Program Files\CMake\bin;C:\Users\─рэшшы\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\─рэшшы\AppData\Local\Programs\Python\Python39\;C:\Users\─рэшшы\AppData\Local\Microsoft\WindowsApps;;D:\PyCharm Community Edition 2021.1.1\bin;;C:\Users\─рэшшы\PyCharm 2021.1.1\bin;;C:\Users\─рэшшы\AppData\Roaming\npm;D:\vs code\Microsoft VS Code\bin;
+  #$ INCLUDES="-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../include"  
+  #$ LIBRARIES=  "/LIBPATH:C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../lib/x64"
+  #$ CUDAFE_FLAGS=--sdk_dir "C:\Program Files (x86)\Windows Kits\10"
+  #$ PTXAS_FLAGS=
+  CMakeCUDACompilerId.cu
+  #$ cl.exe @"C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-9.res" > "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-8_CMakeCUDACompilerId.cpp1.ii" 
+  CMakeCUDACompilerId.cu
+  #$ erase C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-9.res
+  #$ cicc --microsoft_version=1933 --msvc_target_version=1933 --compiler_bindir "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\Program Files (x86)\Windows Kits\10"  -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "tmpxft_00002174_00000000-4_CMakeCUDACompilerId.fatbin.c" -g -O0 -tused --gen_module_id_file --module_id_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-5_CMakeCUDACompilerId.module_id" --gen_c_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.c" --stub_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.gpu"  "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-8_CMakeCUDACompilerId.cpp1.ii" -o "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.ptx"
+  #$ ptxas -arch=sm_52 -m64 -g --dont-merge-basicblocks --return-at-end "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.ptx"  -o "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-10_CMakeCUDACompilerId.sm_52.cubin" 
+  #$ fatbinary -64 --ident="D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --cmdline="-g --dont-merge-basicblocks --return-at-end " --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -g "--image3=kind=elf,sm=52,file=C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-10_CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.ptx" --embedded-fatbin="C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-4_CMakeCUDACompilerId.fatbin.c" 
+  #$ erase C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-4_CMakeCUDACompilerId.fatbin
+  #$ cl.exe @"C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-11.res" > "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+  CMakeCUDACompilerId.cu
+  #$ erase C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-11.res
+  #$ cudafe++ --microsoft_version=1933 --msvc_target_version=1933 --compiler_bindir "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.33.31629/bin/HostX64/x64/../../../../../../.." --display_error_number --orig_src_file_name "D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --orig_src_path_name "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CMakeCUDACompilerId.cu" --allow_managed --debug_mode --sdk_dir "C:\Program Files (x86)\Windows Kits\10" --m64 --parse_templates --gen_c_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-5_CMakeCUDACompilerId.module_id" "C:/Users/1678~1/AppData/Local/Temp/tmpxft_00002174_00000000-6_CMakeCUDACompilerId.cpp4.ii" 
+  #$ cl.exe @"C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-12.res" -Fo"D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCUDA/x64/Debug/CMakeCUDACompilerId.cu.obj" 
+  tmpxft_00002174_00000000-7_CMakeCUDACompilerId.cudafe1.cpp
+  #$ erase C:\Users\1678~1\AppData\Local\Temp/tmpxft_00002174_00000000-12.res
+Сборка проекта "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" завершена (целевые объекты CudaBuildCore).
+Link:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCUDA.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\lib\x64" cudart_static.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCUDA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCUDA.lib" /MACHINE:X64 D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\x64\Debug\CMakeCUDACompilerId.cu.obj
+     Создается библиотека .\CompilerIdCUDA.lib и объект .\CompilerIdCUDA.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+  CompilerIdCUDA.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.exe
+PostBuildEvent:
+  echo CMAKE_CUDA_COMPILER=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe
+  :VCEnd
+  CMAKE_CUDA_COMPILER=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe
+FinalizeBuildStatus:
+  Файл "Debug\CompilerIdCUDA.tlog\unsuccessfulbuild" удаляется.
+  Обращение к "Debug\CompilerIdCUDA.tlog\CompilerIdCUDA.lastbuildstate".
+Сборка проекта "D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" завершена (целевые объекты по умолчанию).
+
+Сборка успешно завершена.
+
+"D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj" (целевой объект по умолчанию) (1) ->
+(Целевой объект Link) -> 
+  LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\3.24.0\CompilerIdCUDA\CompilerIdCUDA.vcxproj]
+
+    Предупреждений: 1
+    Ошибок: 0
+
+Прошло времени 00:00:03.58
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exe"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.exp"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.lib"
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "CompilerIdCUDA.vcxproj"
+
+The CUDA compiler identification is NVIDIA, found in "D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/3.24.0/CompilerIdCUDA/CompilerIdCUDA.exe"
+
+Parsed CUDA nvcc include information from above output:
+  found 'INCLUDES=' string: ["-IC:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin/../include"  ]
+
+
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_bb54e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.0+f67e3d35e for .NET Framework
+  Compiling CUDA source file C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu...
+  
+  D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52,code=\"compute_52,compute_52\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu    -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"     --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\"Debug\"" -D_MBCS -D"CMAKE_INTDIR=\"Debug\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_bb54e.dir\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o cmTC_bb54e.dir\Debug\CMakeCUDACompilerABI.obj "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu" 
+cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]
+cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]
+  CMakeCUDACompilerABI.cu
+cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]
+LINK : warning LNK4044: нераспознанный параметр "/v"; игнорируется [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]
+     Создается библиотека D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp/Debug/cmTC_bb54e.lib и объект D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp/Debug/cmTC_bb54e.exp
+LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек; используйте /NODEFAULTLIB:library [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]
+  cmTC_bb54e.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_bb54e.exe
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=start
+  warn: unable to parse implicit include dirs!
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(link\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_bb54e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.0+f67e3d35e for .NET Framework]
+  ignore line: [  Compiling CUDA source file C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu...]
+  ignore line: [  ]
+  ignore line: [  D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\bin\nvcc.exe" -gencode=arch=compute_52 code=\"compute_52 compute_52\" -gencode=arch=compute_52 code=\"sm_52 compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x64" -x cu    -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7\include"     --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler="/EHsc -Zi -Ob0 -v" -g  -D_WINDOWS -D"CMAKE_INTDIR=\"Debug\"" -D_MBCS -D"CMAKE_INTDIR=\"Debug\"" -Xcompiler "/EHsc /W1 /nologo /Od /FdcmTC_bb54e.dir\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o cmTC_bb54e.dir\Debug\CMakeCUDACompilerABI.obj "C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCUDACompilerABI.cu" ]
+  ignore line: [cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]]
+  ignore line: [cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]]
+  ignore line: [  CMakeCUDACompilerABI.cu]
+  ignore line: [cl : командная строка warning D9002: пропуск неизвестного параметра "-v" [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]]
+  ignore line: [LINK : warning LNK4044: нераспознанный параметр "/v"]
+  ignore line: [ игнорируется [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]]
+  ignore line: [     Создается библиотека D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp/Debug/cmTC_bb54e.lib и объект D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/CMakeTmp/Debug/cmTC_bb54e.exp]
+  ignore line: [LINK : warning LNK4098: библиотека по умолчанию "LIBCMT" конфликтует с использованием других библиотек]
+  ignore line: [ используйте /NODEFAULTLIB:library [D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\cmTC_bb54e.vcxproj]]
+  ignore line: [  cmTC_bb54e.vcxproj -> D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\CMakeFiles\CMakeTmp\Debug\cmTC_bb54e.exe]
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit objs: []
+  implicit dirs: []
+  implicit fwks: []
 
 

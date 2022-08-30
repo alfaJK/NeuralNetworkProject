@@ -3,6 +3,9 @@
 #include "NeuralModules/Neural_Module.h"
 #include <random>
 #include <fstream>
+#include "CUDA/CudaTensor.h"
+#include "CUDA/CudaModuleCalc.h"
+
 class ConvL : public NeuralModule{
 private:
 	std::default_random_engine generator;

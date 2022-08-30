@@ -1,5 +1,6 @@
 ﻿//#include "../../DLL/NeuralLib/NeuralLib/pch.h"
 #include "NeuralController/Conv_neural.h"
+#include <time.h> 
 Neural::Neural(const char* setting_filename) {
     Neural_setting = new Setting();
     Neural_setting->Load_Setting(setting_filename);
@@ -14,7 +15,13 @@ Neural::Neural(const char* setting_filename) {
         if (Neural_setting->Module[i] == 0) {
             if (rr == 1) {
                 Module.at(i) = new ConvL(ModuleResult[i]->size, Neural_setting->filter_size, 16, 1, Neural_setting->Padding);
+                clock_t start = clock();
                 ModuleResult[i + 1] = new Tensor(Module[i]->Direct_dist(*ModuleResult[i]));
+                clock_t end = clock();
+                double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+                printf("The time: %f seconds\n", seconds);
+                int ff;
+                std::cin>>ff;
                 rr++;
                 continue;
             }

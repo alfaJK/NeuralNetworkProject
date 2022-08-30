@@ -84,6 +84,47 @@ Tensor ConvL::Direct_dist(const Tensor& X) {
 
 	Tensor output(OutputSize); 
 
+/*	Tensorsize SizeI;
+	Tensorsize SizeF;
+	Tensorsize SizeO;
+
+	SizeI.width = X.size.width;
+	SizeI.height = X.size.height;
+	SizeI.depth = X.size.depth;
+
+	SizeF.width = Filers[0].size.width;
+	SizeF.height = Filers[0].size.height;
+	SizeF.depth = Filers[0].size.depth;
+
+	SizeO.width = output.size.width;
+	SizeO.height = output.size.height;
+	SizeO.depth = 1;
+
+	for (int f = 0; f < count_f; f++) {
+
+		float* I = (float*)malloc(X.size.height * X.size.width * X.size.depth * sizeof(float));
+		float* F = (float*)malloc(Filers[f].size.height * Filers[f].size.width * Filers[f].size.depth * sizeof(float));
+		float* O = (float*)malloc(output.size.height * output.size.width * sizeof(float));
+
+		for(int i=0; i<X.size.height * X.size.width * X.size.depth; i++ ) I[i] = X.Tensor_Values[i];
+
+		for(int i=0; i<Filers[f].size.height * Filers[f].size.width * Filers[f].size.depth; i++ ) F[i] = Filers[f].Tensor_Values[i];
+
+		for(int i=0; i<output.size.height * output.size.width; i++ ) O[i] = 0;
+
+		CudaConvDirectDist(I , F, O , SizeI , SizeF , SizeO);
+
+		for (int y = 0; y < OutputSize.height; y++) {
+			for (int x = 0; x < OutputSize.width; x++) {
+				output(y, x , f) = O[y * OutputSize.width + x];
+			}
+		}
+		
+		free(I);
+		free(F);
+		free(O);
+	}*/
+	
 	for (int f = 0; f < count_f; f++) {
 		for (int y = 0; y < OutputSize.height; y++) {
 			for (int x = 0; x < OutputSize.width; x++) {

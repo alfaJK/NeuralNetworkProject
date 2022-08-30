@@ -2,13 +2,16 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\Debug\SSD.exe</FullPath>
+      <FullPath>D:\GIT_RPS\AnyProjects\NeuralNetworkProject\bin\Debug\CUDA_test.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\Даниил\Desktop\Any Projects\NeuralNetworkProject\build\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>D:\GIT_RPS\AnyProjects\NeuralNetworkProject\bin\Debug\SSD.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\GIT_RPS\AnyProjects\NeuralNetworkProject\build\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
