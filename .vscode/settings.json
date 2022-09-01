@@ -1,3 +1,13 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/DLL"
+    "cmake":{
+        "sourceDirectory":"${workspaceFolder}/DLL",
+        "buildDirectory": "${workspaceFolder}/DLL/build",
+
+    },
+    "files.associations": {
+        "*.rh": "cpp",
+        "iostream": "cpp",
+        "random": "cpp",
+        "vector": "cpp"
+    }
 }
