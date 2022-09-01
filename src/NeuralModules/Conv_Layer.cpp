@@ -84,7 +84,7 @@ Tensor ConvL::Direct_dist(const Tensor& X) {
 
 	Tensor output(OutputSize); 
 
-/*	Tensorsize SizeI;
+	Tensorsize SizeI;
 	Tensorsize SizeF;
 	Tensorsize SizeO;
 
@@ -123,9 +123,9 @@ Tensor ConvL::Direct_dist(const Tensor& X) {
 		free(I);
 		free(F);
 		free(O);
-	}*/
+	}
 	
-	for (int f = 0; f < count_f; f++) {
+/*	for (int f = 0; f < count_f; f++) {
 		for (int y = 0; y < OutputSize.height; y++) {
 			for (int x = 0; x < OutputSize.width; x++) {
 				double sum = Bias[f]; 
@@ -142,7 +142,7 @@ Tensor ConvL::Direct_dist(const Tensor& X) {
 				output(y, x , f) = sum; 
 			}
 		}
-	}
+	}*/
 	return output;
 }
 

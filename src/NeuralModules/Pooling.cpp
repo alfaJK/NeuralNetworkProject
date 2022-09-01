@@ -17,6 +17,10 @@ PoolingLayer::PoolingLayer(Tensor_size InputSize, int scale) : Mask(InputSize) {
 Tensor PoolingLayer::Direct_dist(const Tensor& X) {
     Tensor OutTensor(OutputSize); 
 
+
+
+    
+
     for (int d = 0; d < InputSize.depth; d++) {
         for (int i = 0; i < InputSize.height; i += scale) {
             for (int j = 0; j < InputSize.width; j += scale) {
