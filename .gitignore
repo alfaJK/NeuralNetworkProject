@@ -1,6 +1,7 @@
 # Prerequisites
 *.d
 .vs/
+NeuralNetworkUI/.vs/
 DLL/build/
 # Compiled Object files
 *.slo
