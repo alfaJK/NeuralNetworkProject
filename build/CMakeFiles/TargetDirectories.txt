@@ -1,5 +1,0 @@
-D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/SSD.dir
-D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/ALL_BUILD.dir
-D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/CMakeFiles/ZERO_CHECK.dir
-D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/src/CUDA/CMakeFiles/CUDA_test.dir
-D:/GIT_RPS/AnyProjects/NeuralNetworkProject/build/src/CUDA/CMakeFiles/ALL_BUILD.dir
