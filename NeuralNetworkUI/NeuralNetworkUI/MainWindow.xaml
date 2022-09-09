@@ -7,12 +7,13 @@
         xmlns:local="clr-namespace:NeuralNetworkUI"
         xmlns:dz="http://schemas.devzest.com/presentation/docking"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="386" Width="800">
 
     <Window.DataContext>
         <local:Graph/>
     </Window.DataContext>
     <Grid>
+
         
 
         <!-- <dz:DockControl>
@@ -60,39 +61,135 @@
             <Border Height="40"  DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
                 <ToolBarTray>
                     <ToolBar Background="White" >
-                 
                         <Button >
                             <Image Source="pack://application:,,,/icons/start.png" MaxHeight="25"></Image>
                         </Button>
-                    
                         <Button >
                             <Image Source="pack://application:,,,/icons/stop.png" MaxHeight="25"></Image>
                         </Button>
-                    
                         <Button >
                             <Image Source="pack://application:,,,/icons/save.png" MaxHeight="25"></Image>
                         </Button>
-
-                   
-                
-                 
-
-                </ToolBar>
+                    </ToolBar>
                 </ToolBarTray>
             </Border>
-            <Border Width="200" Background="PaleGreen" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
-           
-            </Border>
+         
+                <!--   <TreeView Margin="0,52,0,158" Name="TreeView1" HorizontalAlignment="Center" Width="200">
+                    <TreeViewItem Name="Child1">
+                        <TreeViewItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"></Image>
+                                <TextBlock  Margin ="5 0 0 0" Text="Coffie"/>
+                            </StackPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem Name="Child2">
+                        <TreeViewItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"></Image>
+                                <TextBlock Margin ="5 0 0 0" Text="Coffie"></TextBlock>
+                            </StackPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeViewItem Name="Child3">
+                        <TreeViewItem.Header>
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"></Image>
+                                <TextBlock Margin ="5 0 0 0" Text="Coffie"></TextBlock>
+                            </StackPanel>
+                        </TreeViewItem.Header>
+                    </TreeViewItem>
+                    <TreeView.ItemTemplate>
+                        <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                            <TextBlock Text="{Binding ItemName}">
+                                <TextBlock.ContextMenu>
+                                    <ContextMenu>
+                                        <MenuItem Header ="Add SubNode"></MenuItem>
+                                        <MenuItem Header ="Remove Node"></MenuItem>
+                                    </ContextMenu>
+                                </TextBlock.ContextMenu>
+                            </TextBlock>
+                        </HierarchicalDataTemplate>
+                    </TreeView.ItemTemplate>
+
+                </TreeView>-->
+             
+                 <DockPanel Background="Red" Width="220" >
+                        
+
+                <StackPanel  DockPanel.Dock="Top" >
+                    <Label  DockPanel.Dock="Top" Height="25"  Content="Модули нейронной сети" Background="LightGray" />
+                    <TreeView   DockPanel.Dock="Top"  x:Name="treeView"    ItemsSource="{Binding CategoriesList}" Height="304"  >
+                            <TreeView.ContextMenu>
+                                <ContextMenu x:Name="leftbarmenu">
+                                    <MenuItem x:Name="addmenu" Click="MenuItem_Add" Header ="Add">
+                                        <MenuItem Header ="1" />
+                                        <MenuItem Header ="2" />
+                                        <MenuItem Header ="3" />
+                                        <MenuItem Header ="4" />
+                                    </MenuItem>
+                                    <MenuItem Header ="Remove" />
+                                </ContextMenu>
+                            </TreeView.ContextMenu>
+                            <TreeView.ItemTemplate>
+                                <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"/>
+                                        <TextBlock Margin ="5 0 0 0" Text="{Binding ItemName}">
+                                            <TextBlock.ContextMenu>
+                                                <ContextMenu>
+                                                    <MenuItem Header ="Add SubNode"/>
+                                                    <MenuItem Header ="Remove Node" />
+                                                </ContextMenu>
+                                            </TextBlock.ContextMenu>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </HierarchicalDataTemplate>
+                            </TreeView.ItemTemplate>
+                        </TreeView>
+                  
+                    </StackPanel>
+                <StackPanel VerticalAlignment="Stretch" DockPanel.Dock="Top">
+                    <Label  DockPanel.Dock="Top" Height="25"  Content="Параметры" Background="LightGray" />
+                    <TreeView  DockPanel.Dock="Top"  x:Name="treeView1"   Height="301">
+                        <TreeView.ContextMenu>
+                            <ContextMenu x:Name="leftbarmenu2">
+                                <MenuItem x:Name="addmenu2" Click="MenuItem_Add" Header ="Add">
+                                    <MenuItem Header ="1" />
+                                    <MenuItem Header ="2" />
+                                    <MenuItem Header ="3" />
+                                    <MenuItem Header ="4" />
+                                </MenuItem>
+                                <MenuItem Header ="Remove" />
+                            </ContextMenu>
+                        </TreeView.ContextMenu>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"/>
+                                    <TextBlock Margin ="5 0 0 0" Text="{Binding ItemName}">
+                                        <TextBlock.ContextMenu>
+                                            <ContextMenu>
+                                                <MenuItem Header ="Add SubNode"/>
+                                                <MenuItem Header ="Remove Node" />
+                                            </ContextMenu>
+                                        </TextBlock.ContextMenu>
+                                    </TextBlock>
+                                </StackPanel>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+                </StackPanel>
+            </DockPanel>
+        
+
             <Border Background="White" BorderBrush="Black" BorderThickness="1">
                 <TabControl>
                     <TabItem Header="Вкладка 1" >
                         <oxy:PlotView Model="{Binding MyModel}" Grid.Row="0" Grid.Column="1" />
-
                     </TabItem>
                     <TabItem Header="Вкладка 2" >
                         <DockPanel  LastChildFill="False" Background="red" Width="200" Height="100" DockPanel.Dock="Bottom">
-
-
 
                         </DockPanel>
 

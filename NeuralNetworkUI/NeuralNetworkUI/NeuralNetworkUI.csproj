@@ -11,6 +11,7 @@
     <None Remove="icons\save.png" />
     <None Remove="icons\start.png" />
     <None Remove="icons\stop.png" />
+    <None Remove="icons\test.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +25,7 @@
     <Resource Include="icons\save.png" />
     <Resource Include="icons\start.png" />
     <Resource Include="icons\stop.png" />
+    <Resource Include="icons\test.png" />
   </ItemGroup>
 
 </Project>

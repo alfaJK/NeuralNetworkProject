@@ -19,9 +19,7 @@ namespace NeuralNetworkUI
         {
             GrPoints = new OxyPlot.Series.LineSeries();
             this.MyModel = new PlotModel { Title = "Обучение нейронной сети" };
-            /*   
-
-
+            /* 
              //   var model = new PlotModel { Title = "ContourSeries" };
 
                 double x0 = -3.1;
