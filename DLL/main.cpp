@@ -1,4 +1,3 @@
-
 #include "NeuralController/Conv_neural.h"
 #include "IOData/Images.h"
 #include "NeuralController/Setting.h"

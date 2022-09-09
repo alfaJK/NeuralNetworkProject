@@ -1,0 +1,270 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "DevZest.WpfDocking/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35-Client/DevZest.WpfDocking.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35-Client/DevZest.WpfDocking.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "DockPanelSuite/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/WeifenLuo.WinFormsUI.Docking.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/WeifenLuo.WinFormsUI.Docking.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
+      },
+      "OxyPlot.Core/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "OxyPlot.Wpf/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.1.0",
+          "OxyPlot.Wpf.Shared": "2.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "OxyPlot.Wpf.Shared/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "2.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "DevZest.WpfDocking/3.0.0": {
+      "sha512": "d5WfG8WLpeA3KZhoV6CkpUNl10kEkOx/QDo/iyHhFd6Er81zwEANRBeKWpHFpAVMNB1TIbWsta3PaZXQLZyXcg==",
+      "type": "package",
+      "path": "devzest.wpfdocking/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Documentation.chm",
+        "Readme.txt",
+        "devzest.wpfdocking.3.0.0.nupkg.sha512",
+        "devzest.wpfdocking.nuspec",
+        "lib/net35-Client/DevZest.WpfDocking.dll",
+        "lib/net35-Client/DevZest.WpfDocking.xml"
+      ]
+    },
+    "DockPanelSuite/3.1.0": {
+      "sha512": "E7Kb6lnqMZI51afVZKszbxltvOc+op+QlTh5jSHMsEaTeC7MfXxBuKXm+0s/WGC9wwJsp+VLxQyIAMBTEnJtPA==",
+      "type": "package",
+      "path": "dockpanelsuite/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dockpanelsuite.3.1.0.nupkg.sha512",
+        "dockpanelsuite.nuspec",
+        "lib/net35/WeifenLuo.WinFormsUI.Docking.dll",
+        "lib/net40/WeifenLuo.WinFormsUI.Docking.dll",
+        "lib/netcoreapp3.1/WeifenLuo.WinFormsUI.Docking.dll"
+      ]
+    },
+    "OxyPlot.Core/2.1.0": {
+      "sha512": "jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
+      "type": "package",
+      "path": "oxyplot.core/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.dll",
+        "lib/net40/OxyPlot.xml",
+        "lib/net45/OxyPlot.dll",
+        "lib/net45/OxyPlot.xml",
+        "lib/netstandard1.0/OxyPlot.dll",
+        "lib/netstandard1.0/OxyPlot.xml",
+        "lib/netstandard2.0/OxyPlot.dll",
+        "lib/netstandard2.0/OxyPlot.xml",
+        "oxyplot.core.2.1.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
+    },
+    "OxyPlot.Wpf/2.1.0": {
+      "sha512": "behQPbPDbV5+OerxO1E2iKH7dNaDN4OFSCzWF8Dy296p9CG/RFd4KyOEHDmcckZ7mYp5KQ4BMLD+WtQLjDSQvQ==",
+      "type": "package",
+      "path": "oxyplot.wpf/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.Wpf.dll",
+        "lib/net40/OxyPlot.Wpf.xml",
+        "lib/net45/OxyPlot.Wpf.dll",
+        "lib/net45/OxyPlot.Wpf.xml",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.dll",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.xml",
+        "oxyplot.wpf.2.1.0.nupkg.sha512",
+        "oxyplot.wpf.nuspec"
+      ]
+    },
+    "OxyPlot.Wpf.Shared/2.1.0": {
+      "sha512": "ign36iiFEadBUNF7SVgsPn3DCqP1VWjISRVgEChW5M4LNyC9Lz8iOPy1mypQG/imdn0mCQppTjju+0a4k+yTsA==",
+      "type": "package",
+      "path": "oxyplot.wpf.shared/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "OxyPlot_128.png",
+        "lib/net40/OxyPlot.Wpf.Shared.dll",
+        "lib/net40/OxyPlot.Wpf.Shared.xml",
+        "lib/net45/OxyPlot.Wpf.Shared.dll",
+        "lib/net45/OxyPlot.Wpf.Shared.xml",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll",
+        "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.xml",
+        "oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+        "oxyplot.wpf.shared.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "DevZest.WpfDocking >= 3.0.0",
+      "DockPanelSuite >= 3.1.0",
+      "OxyPlot.Core >= 2.1.0",
+      "OxyPlot.Wpf >= 2.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Даниил\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\GIT_RPS\\AnyProjects\\NeuralNetworkProject\\NeuralNetworkUI\\NeuralNetworkUI\\NeuralNetworkUI.csproj",
+      "projectName": "NeuralNetworkUI",
+      "projectPath": "D:\\GIT_RPS\\AnyProjects\\NeuralNetworkProject\\NeuralNetworkUI\\NeuralNetworkUI\\NeuralNetworkUI.csproj",
+      "packagesPath": "C:\\Users\\Даниил\\.nuget\\packages\\",
+      "outputPath": "D:\\GIT_RPS\\AnyProjects\\NeuralNetworkProject\\NeuralNetworkUI\\NeuralNetworkUI\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Даниил\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "DevZest.WpfDocking": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
+          "DockPanelSuite": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "OxyPlot.Core": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
+          "OxyPlot.Wpf": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"DevZest.WpfDocking 3.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "DevZest.WpfDocking",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

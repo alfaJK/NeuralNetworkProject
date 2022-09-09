@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons\save.png" />
+    <None Remove="icons\start.png" />
+    <None Remove="icons\stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevZest.WpfDocking" Version="3.0.0" />
+    <PackageReference Include="DockPanelSuite" Version="3.1.0" />
+    <PackageReference Include="OxyPlot.Core" Version="2.1.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons\save.png" />
+    <Resource Include="icons\start.png" />
+    <Resource Include="icons\stop.png" />
+  </ItemGroup>
+
+</Project>

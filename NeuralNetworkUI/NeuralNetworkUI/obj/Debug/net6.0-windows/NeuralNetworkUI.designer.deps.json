@@ -1,0 +1,95 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DevZest.WpfDocking/3.0.0": {
+        "runtime": {
+          "lib/net35-Client/DevZest.WpfDocking.dll": {
+            "assemblyVersion": "2.5.0.0",
+            "fileVersion": "2.5.5912.0"
+          }
+        }
+      },
+      "DockPanelSuite/3.1.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/WeifenLuo.WinFormsUI.Docking.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        }
+      },
+      "OxyPlot.Core/2.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "OxyPlot.Wpf/2.1.0": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.0",
+          "OxyPlot.Wpf.Shared": "2.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "OxyPlot.Wpf.Shared/2.1.0": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/OxyPlot.Wpf.Shared.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevZest.WpfDocking/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d5WfG8WLpeA3KZhoV6CkpUNl10kEkOx/QDo/iyHhFd6Er81zwEANRBeKWpHFpAVMNB1TIbWsta3PaZXQLZyXcg==",
+      "path": "devzest.wpfdocking/3.0.0",
+      "hashPath": "devzest.wpfdocking.3.0.0.nupkg.sha512"
+    },
+    "DockPanelSuite/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E7Kb6lnqMZI51afVZKszbxltvOc+op+QlTh5jSHMsEaTeC7MfXxBuKXm+0s/WGC9wwJsp+VLxQyIAMBTEnJtPA==",
+      "path": "dockpanelsuite/3.1.0",
+      "hashPath": "dockpanelsuite.3.1.0.nupkg.sha512"
+    },
+    "OxyPlot.Core/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jG+Ct3T59fXDG2LE1hyUaXqH7i+h5Nfway1iB0+0NaY2mvDsz8Row/BKjiBWCt5NHp3+q9JSMiD2wpin2hh3kw==",
+      "path": "oxyplot.core/2.1.0",
+      "hashPath": "oxyplot.core.2.1.0.nupkg.sha512"
+    },
+    "OxyPlot.Wpf/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-behQPbPDbV5+OerxO1E2iKH7dNaDN4OFSCzWF8Dy296p9CG/RFd4KyOEHDmcckZ7mYp5KQ4BMLD+WtQLjDSQvQ==",
+      "path": "oxyplot.wpf/2.1.0",
+      "hashPath": "oxyplot.wpf.2.1.0.nupkg.sha512"
+    },
+    "OxyPlot.Wpf.Shared/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ign36iiFEadBUNF7SVgsPn3DCqP1VWjISRVgEChW5M4LNyC9Lz8iOPy1mypQG/imdn0mCQppTjju+0a4k+yTsA==",
+      "path": "oxyplot.wpf.shared/2.1.0",
+      "hashPath": "oxyplot.wpf.shared.2.1.0.nupkg.sha512"
+    }
+  }
+}

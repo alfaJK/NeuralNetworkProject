@@ -2,6 +2,9 @@
 #include "NeuralController/Conv_neural.h"
 #include <time.h> 
 Neural::Neural(const char* setting_filename) {
+    isInit = false;
+    pr = 0;
+    testnum = 0;
     Neural_setting = new Setting();
     Neural_setting->Load_Setting(setting_filename);
     Module.resize(Neural_setting->Count_Module);
@@ -15,13 +18,13 @@ Neural::Neural(const char* setting_filename) {
         if (Neural_setting->Module[i] == 0) {
             if (rr == 1) {
                 Module.at(i) = new ConvL(ModuleResult[i]->size, Neural_setting->filter_size, 16, 1, Neural_setting->Padding);
-                clock_t start = clock();
+               // clock_t start = clock();
                 ModuleResult[i + 1] = new Tensor(Module[i]->Direct_dist(*ModuleResult[i]));
-                clock_t end = clock();
-                double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-                printf("The time: %f seconds\n", seconds);
-                int ff;
-                std::cin>>ff;
+               // clock_t end = clock();
+               // double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+              //  printf("The time: %f seconds\n", seconds);
+              //  int ff;
+               // std::cin>>ff;
                 rr++;
                 continue;
             }
@@ -48,6 +51,7 @@ Neural::Neural(const char* setting_filename) {
             continue;
         }
     }
+    isInit = true;
 }
 void Neural::Start() {
     if (Neural_setting->learn == 1) Learn();
@@ -80,7 +84,6 @@ void Neural::LoadBar(int size , int count ,int progress ) {
     }
     std::cout << "] ";
 }
-
 void Neural::Learn() {
 
     int sw = 0;
@@ -125,7 +128,7 @@ void Neural::Learn() {
                     *ModuleResult[i + 1] = Module[i]->Direct_dist(*ModuleResult[i]);
                 setcur(0, 0);
                 LoadBar(80, Neural_setting->cout_learn, (c));
-                double pr = ((double)(c) / Neural_setting->cout_learn) * 100;
+                pr = ((double)(c) / Neural_setting->cout_learn) * 100;
                 std::cout << pr << "%  "<< "rate: " << Neural_setting->rate<<"  "<<std::endl;
                 std::cout << u << "/" << "200000  er1: " << error << "   " << Metrics[0] << " " ;
                 //std::cout<< "spec " << spec << " sens " <<sens << std::endl;
