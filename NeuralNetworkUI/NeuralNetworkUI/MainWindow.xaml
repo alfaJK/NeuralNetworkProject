@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"
         xmlns:local="clr-namespace:NeuralNetworkUI"
-        xmlns:dz="http://schemas.devzest.com/presentation/docking"
+        
+        xmlns:dz="http://schemas.devzest.com/presentation/docking" 
+      
         mc:Ignorable="d"
         Title="MainWindow" Height="386" Width="800">
 
-    <Window.DataContext>
-        <local:Graph/>
-    </Window.DataContext>
+    <Window.Resources>
+        <local:Graph x:Key ="mod"/>
+        <local:DataGraph x:Key="DataGr"/>
+    </Window.Resources>
     <Grid>
-
-        
-
         <!-- <dz:DockControl>
             <dz:DockItem TabText="Welcome" Title="Welcome" ShowAction="{dz:ShowAsDockPositionAction DockPosition=Document}">
                 <oxy:PlotView Model="{Binding MyModel}" Grid.Row="0" Grid.Column="1" />
@@ -61,14 +61,17 @@
             <Border Height="40"  DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
                 <ToolBarTray>
                     <ToolBar Background="White" >
-                        <Button >
-                            <Image Source="pack://application:,,,/icons/start.png" MaxHeight="25"></Image>
+                        <Button Click="StartLearn" >
+                            <Image  Source="pack://application:,,,/icons/start.png" MaxHeight="25"></Image>
                         </Button>
                         <Button >
                             <Image Source="pack://application:,,,/icons/stop.png" MaxHeight="25"></Image>
                         </Button>
                         <Button >
                             <Image Source="pack://application:,,,/icons/save.png" MaxHeight="25"></Image>
+                        </Button>
+                        <Button Click="button1_Click" >
+                            <Image Source="pack://application:,,,/icons/load.png" MaxHeight="25"></Image>
                         </Button>
                     </ToolBar>
                 </ToolBarTray>
@@ -114,22 +117,16 @@
 
                 </TreeView>-->
              
-                 <DockPanel Background="Red" Width="220" >
+                 <DockPanel Width="220" >
                         
 
                 <StackPanel  DockPanel.Dock="Top" >
                     <Label  DockPanel.Dock="Top" Height="25"  Content="Модули нейронной сети" Background="LightGray" />
-                    <TreeView   DockPanel.Dock="Top"  x:Name="treeView"    ItemsSource="{Binding CategoriesList}" Height="304"  >
+                    <TreeView   DockPanel.Dock="Top"  x:Name="treeView"   ItemsSource="{Binding categoriesList}" Height="304"  >
                             <TreeView.ContextMenu>
                                 <ContextMenu x:Name="leftbarmenu">
-                                    <MenuItem x:Name="addmenu" Click="MenuItem_Add" Header ="Add">
-                                        <MenuItem Header ="1" />
-                                        <MenuItem Header ="2" />
-                                        <MenuItem Header ="3" />
-                                        <MenuItem Header ="4" />
-                                    </MenuItem>
-                                    <MenuItem Header ="Remove" />
-                                </ContextMenu>
+                                <MenuItem x:Name="addmenu" Click="NeuralSetting_Add" Header ="Добавить топологию"></MenuItem>
+                            </ContextMenu>
                             </TreeView.ContextMenu>
                             <TreeView.ItemTemplate>
                                 <HierarchicalDataTemplate ItemsSource="{Binding Items}">
@@ -138,8 +135,8 @@
                                         <TextBlock Margin ="5 0 0 0" Text="{Binding ItemName}">
                                             <TextBlock.ContextMenu>
                                                 <ContextMenu>
-                                                    <MenuItem Header ="Add SubNode"/>
-                                                    <MenuItem Header ="Remove Node" />
+                                                <MenuItem Click="MenuItem_Add" Header ="Добавить модуль"/>
+                                                <MenuItem Header ="Удалить" />
                                                 </ContextMenu>
                                             </TextBlock.ContextMenu>
                                         </TextBlock>
@@ -152,17 +149,7 @@
                 <StackPanel VerticalAlignment="Stretch" DockPanel.Dock="Top">
                     <Label  DockPanel.Dock="Top" Height="25"  Content="Параметры" Background="LightGray" />
                     <TreeView  DockPanel.Dock="Top"  x:Name="treeView1"   Height="301">
-                        <TreeView.ContextMenu>
-                            <ContextMenu x:Name="leftbarmenu2">
-                                <MenuItem x:Name="addmenu2" Click="MenuItem_Add" Header ="Add">
-                                    <MenuItem Header ="1" />
-                                    <MenuItem Header ="2" />
-                                    <MenuItem Header ="3" />
-                                    <MenuItem Header ="4" />
-                                </MenuItem>
-                                <MenuItem Header ="Remove" />
-                            </ContextMenu>
-                        </TreeView.ContextMenu>
+                  
                         <TreeView.ItemTemplate>
                             <HierarchicalDataTemplate ItemsSource="{Binding Items}">
                                 <StackPanel Orientation="Horizontal">
@@ -186,12 +173,12 @@
             <Border Background="White" BorderBrush="Black" BorderThickness="1">
                 <TabControl>
                     <TabItem Header="Вкладка 1" >
-                        <oxy:PlotView Model="{Binding MyModel}" Grid.Row="0" Grid.Column="1" />
+                        <oxy:PlotView Model="{Binding Source={StaticResource mod} , Path=MyModel }" Grid.Row="0" Grid.Column="1" />
                     </TabItem>
                     <TabItem Header="Вкладка 2" >
-                        <DockPanel  LastChildFill="False" Background="red" Width="200" Height="100" DockPanel.Dock="Bottom">
-
-                        </DockPanel>
+        
+                            <oxy:PlotView Width="600" Height="600" Model="{Binding Source={StaticResource DataGr} , Path=MyDataModel }" Grid.Row="0" Grid.Column="1" />
+                      
 
                     </TabItem>
 

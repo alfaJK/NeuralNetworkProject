@@ -27,6 +27,172 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
+      "Expression.Blend.Sdk.WPF/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Expression.Interactions.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Expression.Interactions.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "resource": {
+          "lib/net45/en/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/en/System.Windows.Interactivity.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/System.Windows.Interactivity.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/System.Windows.Interactivity.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/System.Windows.Interactivity.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/System.Windows.Interactivity.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/System.Windows.Interactivity.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ru/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/System.Windows.Interactivity.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/System.Windows.Interactivity.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/System.Windows.Interactivity.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "OxyPlot.Core/2.1.0": {
         "type": "package",
         "compile": {
@@ -78,6 +244,25 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WPF"
         ]
+      },
+      "System.Windows.Interactivity.WPF/2.0.20525": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "related": ".xml"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "related": ".xml"
+          }
+        }
       }
     }
   },
@@ -109,6 +294,269 @@
         "lib/net35/WeifenLuo.WinFormsUI.Docking.dll",
         "lib/net40/WeifenLuo.WinFormsUI.Docking.dll",
         "lib/netcoreapp3.1/WeifenLuo.WinFormsUI.Docking.dll"
+      ]
+    },
+    "Expression.Blend.Sdk.WPF/1.0.1": {
+      "sha512": "eXvBXgPhxHSdlzwK1rItPdrvj8sBzOUvibbAHbR9obo5o5eMTue9/OCOrjguUsaDtR3uzE1IM/HmQqDC686mcA==",
+      "type": "package",
+      "path": "expression.blend.sdk.wpf/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "expression.blend.sdk.wpf.1.0.1.nupkg.sha512",
+        "expression.blend.sdk.wpf.nuspec",
+        "lib/net40/Design/Microsoft.Expression.Controls.Design.dll",
+        "lib/net40/Design/Microsoft.Expression.Drawing.Design.dll",
+        "lib/net40/Design/Microsoft.Expression.Effects.Design.dll",
+        "lib/net40/Design/Microsoft.Expression.Prototyping.SketchControls.design.v4.dll",
+        "lib/net40/Design/de/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/de/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/de/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/en/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/en/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/en/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/es/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/es/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/es/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/fr/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/fr/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/fr/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/it/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/it/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/it/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/ja/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/ja/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/ja/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/ko/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/ko/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/ko/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/zh-Hans/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/zh-Hans/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/zh-Hans/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Design/zh-Hant/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net40/Design/zh-Hant/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net40/Design/zh-Hant/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net40/Microsoft.Expression.Controls.dll",
+        "lib/net40/Microsoft.Expression.Controls.xml",
+        "lib/net40/Microsoft.Expression.Drawing.dll",
+        "lib/net40/Microsoft.Expression.Drawing.xml",
+        "lib/net40/Microsoft.Expression.Effects.dll",
+        "lib/net40/Microsoft.Expression.Effects.xml",
+        "lib/net40/Microsoft.Expression.Interactions.dll",
+        "lib/net40/Microsoft.Expression.Interactions.xml",
+        "lib/net40/Microsoft.Expression.Prototyping.Interactivity.dll",
+        "lib/net40/Microsoft.Expression.Prototyping.SketchControls.dll",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "lib/net40/de/Microsoft.Expression.Controls.xml",
+        "lib/net40/de/Microsoft.Expression.Drawing.xml",
+        "lib/net40/de/Microsoft.Expression.Effects.xml",
+        "lib/net40/de/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/de/Microsoft.Expression.Interactions.xml",
+        "lib/net40/de/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/de/System.Windows.Interactivity.resources.dll",
+        "lib/net40/de/System.Windows.Interactivity.xml",
+        "lib/net40/en/Microsoft.Expression.Controls.xml",
+        "lib/net40/en/Microsoft.Expression.Drawing.xml",
+        "lib/net40/en/Microsoft.Expression.Effects.xml",
+        "lib/net40/en/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/en/Microsoft.Expression.Interactions.xml",
+        "lib/net40/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/en/System.Windows.Interactivity.resources.dll",
+        "lib/net40/en/System.Windows.Interactivity.xml",
+        "lib/net40/es/Microsoft.Expression.Controls.xml",
+        "lib/net40/es/Microsoft.Expression.Drawing.xml",
+        "lib/net40/es/Microsoft.Expression.Effects.xml",
+        "lib/net40/es/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/es/Microsoft.Expression.Interactions.xml",
+        "lib/net40/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/es/System.Windows.Interactivity.resources.dll",
+        "lib/net40/es/System.Windows.Interactivity.xml",
+        "lib/net40/fr/Microsoft.Expression.Controls.xml",
+        "lib/net40/fr/Microsoft.Expression.Drawing.xml",
+        "lib/net40/fr/Microsoft.Expression.Effects.xml",
+        "lib/net40/fr/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/fr/Microsoft.Expression.Interactions.xml",
+        "lib/net40/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/fr/System.Windows.Interactivity.resources.dll",
+        "lib/net40/fr/System.Windows.Interactivity.xml",
+        "lib/net40/it/Microsoft.Expression.Controls.xml",
+        "lib/net40/it/Microsoft.Expression.Drawing.xml",
+        "lib/net40/it/Microsoft.Expression.Effects.xml",
+        "lib/net40/it/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/it/Microsoft.Expression.Interactions.xml",
+        "lib/net40/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/it/System.Windows.Interactivity.resources.dll",
+        "lib/net40/it/System.Windows.Interactivity.xml",
+        "lib/net40/ja/Microsoft.Expression.Controls.xml",
+        "lib/net40/ja/Microsoft.Expression.Drawing.xml",
+        "lib/net40/ja/Microsoft.Expression.Effects.xml",
+        "lib/net40/ja/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/ja/Microsoft.Expression.Interactions.xml",
+        "lib/net40/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/ja/System.Windows.Interactivity.resources.dll",
+        "lib/net40/ja/System.Windows.Interactivity.xml",
+        "lib/net40/ko/Microsoft.Expression.Controls.xml",
+        "lib/net40/ko/Microsoft.Expression.Drawing.xml",
+        "lib/net40/ko/Microsoft.Expression.Effects.xml",
+        "lib/net40/ko/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/ko/Microsoft.Expression.Interactions.xml",
+        "lib/net40/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/ko/System.Windows.Interactivity.resources.dll",
+        "lib/net40/ko/System.Windows.Interactivity.xml",
+        "lib/net40/zh-Hans/Microsoft.Expression.Controls.xml",
+        "lib/net40/zh-Hans/Microsoft.Expression.Drawing.xml",
+        "lib/net40/zh-Hans/Microsoft.Expression.Effects.xml",
+        "lib/net40/zh-Hans/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/zh-Hans/Microsoft.Expression.Interactions.xml",
+        "lib/net40/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/zh-Hans/System.Windows.Interactivity.resources.dll",
+        "lib/net40/zh-Hans/System.Windows.Interactivity.xml",
+        "lib/net40/zh-Hant/Microsoft.Expression.Controls.xml",
+        "lib/net40/zh-Hant/Microsoft.Expression.Drawing.xml",
+        "lib/net40/zh-Hant/Microsoft.Expression.Effects.xml",
+        "lib/net40/zh-Hant/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net40/zh-Hant/Microsoft.Expression.Interactions.xml",
+        "lib/net40/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net40/zh-Hant/System.Windows.Interactivity.resources.dll",
+        "lib/net40/zh-Hant/System.Windows.Interactivity.xml",
+        "lib/net45/Design/Microsoft.Expression.Controls.Design.dll",
+        "lib/net45/Design/Microsoft.Expression.Drawing.Design.dll",
+        "lib/net45/Design/Microsoft.Expression.Effects.Design.dll",
+        "lib/net45/Design/Microsoft.Expression.Prototyping.SketchControls.design.v4.dll",
+        "lib/net45/Design/de/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/de/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/de/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/en/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/en/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/en/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/es/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/es/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/es/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/fr/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/fr/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/fr/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/it/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/it/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/it/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/ja/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/ja/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/ja/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/ko/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/ko/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/ko/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/ru/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/ru/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/ru/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/zh-Hans/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/zh-Hans/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/zh-Hans/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Design/zh-Hant/Microsoft.Expression.Controls.Design.resources.dll",
+        "lib/net45/Design/zh-Hant/Microsoft.Expression.Drawing.Design.resources.dll",
+        "lib/net45/Design/zh-Hant/Microsoft.Expression.Effects.Design.resources.dll",
+        "lib/net45/Microsoft.Expression.Controls.dll",
+        "lib/net45/Microsoft.Expression.Drawing.dll",
+        "lib/net45/Microsoft.Expression.Effects.dll",
+        "lib/net45/Microsoft.Expression.Interactions.dll",
+        "lib/net45/Microsoft.Expression.Prototyping.Interactivity.dll",
+        "lib/net45/Microsoft.Expression.Prototyping.SketchControls.dll",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/net45/en/Microsoft.Expression.Controls.xml",
+        "lib/net45/en/Microsoft.Expression.Drawing.xml",
+        "lib/net45/en/Microsoft.Expression.Effects.xml",
+        "lib/net45/en/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/en/Microsoft.Expression.Interactions.xml",
+        "lib/net45/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/en/System.Windows.Interactivity.resources.dll",
+        "lib/net45/en/System.Windows.Interactivity.xml",
+        "lib/net45/es/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/es/Microsoft.Expression.Controls.xml",
+        "lib/net45/es/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/es/Microsoft.Expression.Drawing.xml",
+        "lib/net45/es/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/es/Microsoft.Expression.Effects.xml",
+        "lib/net45/es/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/es/Microsoft.Expression.Interactions.xml",
+        "lib/net45/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/es/System.Windows.Interactivity.resources.dll",
+        "lib/net45/es/System.Windows.Interactivity.xml",
+        "lib/net45/fr/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/fr/Microsoft.Expression.Controls.xml",
+        "lib/net45/fr/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/fr/Microsoft.Expression.Drawing.xml",
+        "lib/net45/fr/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/fr/Microsoft.Expression.Effects.xml",
+        "lib/net45/fr/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/fr/Microsoft.Expression.Interactions.xml",
+        "lib/net45/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/fr/System.Windows.Interactivity.resources.dll",
+        "lib/net45/fr/System.Windows.Interactivity.xml",
+        "lib/net45/it/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/it/Microsoft.Expression.Controls.xml",
+        "lib/net45/it/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/it/Microsoft.Expression.Drawing.xml",
+        "lib/net45/it/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/it/Microsoft.Expression.Effects.xml",
+        "lib/net45/it/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/it/Microsoft.Expression.Interactions.xml",
+        "lib/net45/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/it/System.Windows.Interactivity.resources.dll",
+        "lib/net45/it/System.Windows.Interactivity.xml",
+        "lib/net45/ja/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/ja/Microsoft.Expression.Controls.xml",
+        "lib/net45/ja/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/ja/Microsoft.Expression.Drawing.xml",
+        "lib/net45/ja/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/ja/Microsoft.Expression.Effects.xml",
+        "lib/net45/ja/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/ja/Microsoft.Expression.Interactions.xml",
+        "lib/net45/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/ja/System.Windows.Interactivity.resources.dll",
+        "lib/net45/ja/System.Windows.Interactivity.xml",
+        "lib/net45/ko/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/ko/Microsoft.Expression.Controls.xml",
+        "lib/net45/ko/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/ko/Microsoft.Expression.Drawing.xml",
+        "lib/net45/ko/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/ko/Microsoft.Expression.Effects.xml",
+        "lib/net45/ko/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/ko/Microsoft.Expression.Interactions.xml",
+        "lib/net45/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/ko/System.Windows.Interactivity.resources.dll",
+        "lib/net45/ko/System.Windows.Interactivity.xml",
+        "lib/net45/ru/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/ru/Microsoft.Expression.Controls.xml",
+        "lib/net45/ru/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/ru/Microsoft.Expression.Drawing.xml",
+        "lib/net45/ru/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/ru/Microsoft.Expression.Effects.xml",
+        "lib/net45/ru/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/ru/Microsoft.Expression.Interactions.xml",
+        "lib/net45/ru/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/ru/System.Windows.Interactivity.resources.dll",
+        "lib/net45/ru/System.Windows.Interactivity.xml",
+        "lib/net45/zh-Hans/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/zh-Hans/Microsoft.Expression.Controls.xml",
+        "lib/net45/zh-Hans/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/zh-Hans/Microsoft.Expression.Drawing.xml",
+        "lib/net45/zh-Hans/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/zh-Hans/Microsoft.Expression.Effects.xml",
+        "lib/net45/zh-Hans/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/zh-Hans/Microsoft.Expression.Interactions.xml",
+        "lib/net45/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/zh-Hans/System.Windows.Interactivity.resources.dll",
+        "lib/net45/zh-Hans/System.Windows.Interactivity.xml",
+        "lib/net45/zh-Hant/Microsoft.Expression.Controls.resources.dll",
+        "lib/net45/zh-Hant/Microsoft.Expression.Controls.xml",
+        "lib/net45/zh-Hant/Microsoft.Expression.Drawing.resources.dll",
+        "lib/net45/zh-Hant/Microsoft.Expression.Drawing.xml",
+        "lib/net45/zh-Hant/Microsoft.Expression.Effects.resources.dll",
+        "lib/net45/zh-Hant/Microsoft.Expression.Effects.xml",
+        "lib/net45/zh-Hant/Microsoft.Expression.Interactions.resources.dll",
+        "lib/net45/zh-Hant/Microsoft.Expression.Interactions.xml",
+        "lib/net45/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll",
+        "lib/net45/zh-Hant/System.Windows.Interactivity.resources.dll",
+        "lib/net45/zh-Hant/System.Windows.Interactivity.xml"
       ]
     },
     "OxyPlot.Core/2.1.0": {
@@ -166,14 +614,31 @@
         "oxyplot.wpf.shared.2.1.0.nupkg.sha512",
         "oxyplot.wpf.shared.nuspec"
       ]
+    },
+    "System.Windows.Interactivity.WPF/2.0.20525": {
+      "sha512": "0r+Le4E7hCm4zToUvBzjSUyTcuU3rFeoPa7JyTdWIzR/F7wH6+O/pWkjHIG40hIA0z1wvRdZayvoizA4wcK1dg==",
+      "type": "package",
+      "path": "system.windows.interactivity.wpf/2.0.20525",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Expression.Interactions.dll",
+        "lib/net40/Microsoft.Expression.Interactions.xml",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net40/System.Windows.Interactivity.xml",
+        "system.windows.interactivity.wpf.2.0.20525.nupkg.sha512",
+        "system.windows.interactivity.wpf.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "DevZest.WpfDocking >= 3.0.0",
       "DockPanelSuite >= 3.1.0",
+      "Expression.Blend.Sdk.WPF >= 1.0.1",
       "OxyPlot.Core >= 2.1.0",
-      "OxyPlot.Wpf >= 2.1.0"
+      "OxyPlot.Wpf >= 2.1.0",
+      "System.Windows.Interactivity.WPF >= 2.0.20525"
     ]
   },
   "packageFolders": {
@@ -223,6 +688,10 @@
             "target": "Package",
             "version": "[3.1.0, )"
           },
+          "Expression.Blend.Sdk.WPF": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "OxyPlot.Core": {
             "target": "Package",
             "version": "[2.1.0, )"
@@ -230,6 +699,10 @@
           "OxyPlot.Wpf": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "System.Windows.Interactivity.WPF": {
+            "target": "Package",
+            "version": "[2.0.20525, )"
           }
         },
         "imports": [
@@ -262,6 +735,26 @@
       "warningLevel": 1,
       "message": "Пакет \"DevZest.WpfDocking 3.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "DevZest.WpfDocking",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Expression.Blend.Sdk.WPF 1.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Expression.Blend.Sdk.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Windows.Interactivity.WPF 2.0.20525\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "System.Windows.Interactivity.WPF",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "2CHfseyn4MxPh7qsCJ/0dEYiWTSfc0zJfyRDaRTWkW4egwTXpHeZUKvAB/ZHyYkpG3J1b/g7R2AHRb+eh/Y+cA==",
+  "dgSpecHash": "nbXYbmDohpV9yrT2pYLA+scnSqLfD5GZoaWt5t722kpEEdpygURJqmjuDWUxMjtt+c9Rf59bcMaCyISkjQDlfg==",
   "success": true,
   "projectFilePath": "D:\\GIT_RPS\\AnyProjects\\NeuralNetworkProject\\NeuralNetworkUI\\NeuralNetworkUI\\NeuralNetworkUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Даниил\\.nuget\\packages\\devzest.wpfdocking\\3.0.0\\devzest.wpfdocking.3.0.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\dockpanelsuite\\3.1.0\\dockpanelsuite.3.1.0.nupkg.sha512",
+    "C:\\Users\\Даниил\\.nuget\\packages\\expression.blend.sdk.wpf\\1.0.1\\expression.blend.sdk.wpf.1.0.1.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
-    "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512"
+    "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",
+    "C:\\Users\\Даниил\\.nuget\\packages\\system.windows.interactivity.wpf\\2.0.20525\\system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
   ],
   "logs": [
     {
@@ -17,6 +19,26 @@
       "warningLevel": 1,
       "message": "Пакет \"DevZest.WpfDocking 3.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "DevZest.WpfDocking",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Expression.Blend.Sdk.WPF 1.0.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Expression.Blend.Sdk.WPF",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"System.Windows.Interactivity.WPF 2.0.20525\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net6.0-windows7.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "System.Windows.Interactivity.WPF",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

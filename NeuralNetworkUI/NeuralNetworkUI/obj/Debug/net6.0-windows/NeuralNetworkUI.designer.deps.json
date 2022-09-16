@@ -22,6 +22,173 @@
           }
         }
       },
+      "Expression.Blend.Sdk.WPF/1.0.1": {
+        "runtime": {
+          "lib/net45/Microsoft.Expression.Interactions.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "3.0.40218.0"
+          },
+          "lib/net45/System.Windows.Interactivity.dll": {
+            "assemblyVersion": "4.5.0.0",
+            "fileVersion": "3.0.40218.0"
+          }
+        },
+        "resources": {
+          "lib/net45/en/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/en/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/en/System.Windows.Interactivity.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/es/System.Windows.Interactivity.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net45/fr/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/fr/System.Windows.Interactivity.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net45/it/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/it/System.Windows.Interactivity.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net45/ja/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ja/System.Windows.Interactivity.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net45/ko/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ko/System.Windows.Interactivity.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net45/ru/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/ru/System.Windows.Interactivity.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hans/System.Windows.Interactivity.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Controls.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Drawing.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Effects.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Interactions.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/Microsoft.Expression.Prototyping.Interactivity.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/net45/zh-Hant/System.Windows.Interactivity.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
       "OxyPlot.Core/2.1.0": {
         "runtime": {
           "lib/netstandard2.0/OxyPlot.dll": {
@@ -52,6 +219,18 @@
             "fileVersion": "2.1.0.0"
           }
         }
+      },
+      "System.Windows.Interactivity.WPF/2.0.20525": {
+        "runtime": {
+          "lib/net40/Microsoft.Expression.Interactions.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "2.0.20525.0"
+          },
+          "lib/net40/System.Windows.Interactivity.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "2.0.20525.0"
+          }
+        }
       }
     }
   },
@@ -69,6 +248,13 @@
       "sha512": "sha512-E7Kb6lnqMZI51afVZKszbxltvOc+op+QlTh5jSHMsEaTeC7MfXxBuKXm+0s/WGC9wwJsp+VLxQyIAMBTEnJtPA==",
       "path": "dockpanelsuite/3.1.0",
       "hashPath": "dockpanelsuite.3.1.0.nupkg.sha512"
+    },
+    "Expression.Blend.Sdk.WPF/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eXvBXgPhxHSdlzwK1rItPdrvj8sBzOUvibbAHbR9obo5o5eMTue9/OCOrjguUsaDtR3uzE1IM/HmQqDC686mcA==",
+      "path": "expression.blend.sdk.wpf/1.0.1",
+      "hashPath": "expression.blend.sdk.wpf.1.0.1.nupkg.sha512"
     },
     "OxyPlot.Core/2.1.0": {
       "type": "package",
@@ -90,6 +276,13 @@
       "sha512": "sha512-ign36iiFEadBUNF7SVgsPn3DCqP1VWjISRVgEChW5M4LNyC9Lz8iOPy1mypQG/imdn0mCQppTjju+0a4k+yTsA==",
       "path": "oxyplot.wpf.shared/2.1.0",
       "hashPath": "oxyplot.wpf.shared.2.1.0.nupkg.sha512"
+    },
+    "System.Windows.Interactivity.WPF/2.0.20525": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0r+Le4E7hCm4zToUvBzjSUyTcuU3rFeoPa7JyTdWIzR/F7wH6+O/pWkjHIG40hIA0z1wvRdZayvoizA4wcK1dg==",
+      "path": "system.windows.interactivity.wpf/2.0.20525",
+      "hashPath": "system.windows.interactivity.wpf.2.0.20525.nupkg.sha512"
     }
   }
 }
