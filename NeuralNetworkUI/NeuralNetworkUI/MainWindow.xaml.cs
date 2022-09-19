@@ -116,6 +116,12 @@ namespace NeuralNetworkUI
         {
            treeView.Height = (e.NewSize.Height - 25)/2;
             treeView1.Height = (e.NewSize.Height - 25)/2;
+            panel_1.Width = (e.NewSize.Width - leftbar.Width) / 2;
+            panel_2.Width = (e.NewSize.Width - leftbar.Width) / 2;
+            graph_1.Width = panel_1.Width;
+            graph_2.Width = panel_2.Width;
+            //   panel_1.Height = (e.NewSize.Height - topbar.Height) / 2;
+            //   panel_2.Height = (e.NewSize.Height - leftbar.Height) / 2;
         }
 
         private void MenuItem_Add(object sender, RoutedEventArgs e)

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,8 +28,13 @@ namespace NeuralNetworkUI
             ns = new NeuraSettinglView();
             ns.AddButton = new DelegateCommand((obj) => this.DialogResult = true);
             ns.CannelButton = new DelegateCommand((obj) => this.DialogResult = false);
+            ns.root = rootpanel;
+           // ns.test = new DelegateCommand((obj) => test = true);
             this.DataContext = ns;
 
         }
+       
+
+        public bool IsValid { get; private set; }
     }
 }

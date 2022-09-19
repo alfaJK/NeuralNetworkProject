@@ -57,8 +57,8 @@
 
 
         <DockPanel LastChildFill="True">
-            <Border  DockPanel.Dock="Top"/>
-            <Border Height="40"  DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
+            <Border   DockPanel.Dock="Top"/>
+            <Border  x:Name="topbar" Height="40"  DockPanel.Dock="Top" BorderBrush="Black" BorderThickness="1">
                 <ToolBarTray>
                     <ToolBar Background="White" >
                         <Button Click="StartLearn" >
@@ -76,8 +76,8 @@
                     </ToolBar>
                 </ToolBarTray>
             </Border>
-         
-                <!--   <TreeView Margin="0,52,0,158" Name="TreeView1" HorizontalAlignment="Center" Width="200">
+
+            <!--   <TreeView Margin="0,52,0,158" Name="TreeView1" HorizontalAlignment="Center" Width="200">
                     <TreeViewItem Name="Child1">
                         <TreeViewItem.Header>
                             <StackPanel Orientation="Horizontal">
@@ -116,40 +116,40 @@
                     </TreeView.ItemTemplate>
 
                 </TreeView>-->
-             
-                 <DockPanel Width="220" >
-                        
+
+            <DockPanel x:Name="leftbar" Width="220" >
+
 
                 <StackPanel  DockPanel.Dock="Top" >
                     <Label  DockPanel.Dock="Top" Height="25"  Content="Модули нейронной сети" Background="LightGray" />
                     <TreeView   DockPanel.Dock="Top"  x:Name="treeView"   ItemsSource="{Binding categoriesList}" Height="304"  >
-                            <TreeView.ContextMenu>
-                                <ContextMenu x:Name="leftbarmenu">
+                        <TreeView.ContextMenu>
+                            <ContextMenu x:Name="leftbarmenu">
                                 <MenuItem x:Name="addmenu" Click="NeuralSetting_Add" Header ="Добавить топологию"></MenuItem>
                             </ContextMenu>
-                            </TreeView.ContextMenu>
-                            <TreeView.ItemTemplate>
-                                <HierarchicalDataTemplate ItemsSource="{Binding Items}">
-                                    <StackPanel Orientation="Horizontal">
-                                        <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"/>
-                                        <TextBlock Margin ="5 0 0 0" Text="{Binding ItemName}">
-                                            <TextBlock.ContextMenu>
-                                                <ContextMenu>
+                        </TreeView.ContextMenu>
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate ItemsSource="{Binding Items}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="pack://application:,,,/icons/test.png" MaxHeight="15"/>
+                                    <TextBlock Margin ="5 0 0 0" Text="{Binding ItemName}">
+                                        <TextBlock.ContextMenu>
+                                            <ContextMenu>
                                                 <MenuItem Click="MenuItem_Add" Header ="Добавить модуль"/>
                                                 <MenuItem Header ="Удалить" />
-                                                </ContextMenu>
-                                            </TextBlock.ContextMenu>
-                                        </TextBlock>
-                                    </StackPanel>
-                                </HierarchicalDataTemplate>
-                            </TreeView.ItemTemplate>
-                        </TreeView>
-                  
-                    </StackPanel>
+                                            </ContextMenu>
+                                        </TextBlock.ContextMenu>
+                                    </TextBlock>
+                                </StackPanel>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+
+                </StackPanel>
                 <StackPanel VerticalAlignment="Stretch" DockPanel.Dock="Top">
                     <Label  DockPanel.Dock="Top" Height="25"  Content="Параметры" Background="LightGray" />
                     <TreeView  DockPanel.Dock="Top"  x:Name="treeView1"   Height="301">
-                  
+
                         <TreeView.ItemTemplate>
                             <HierarchicalDataTemplate ItemsSource="{Binding Items}">
                                 <StackPanel Orientation="Horizontal">
@@ -168,17 +168,28 @@
                     </TreeView>
                 </StackPanel>
             </DockPanel>
-        
 
-            <Border Background="White" BorderBrush="Black" BorderThickness="1">
+
+            <Border x:Name="main_content" Background="White" BorderBrush="Black" BorderThickness="1">
                 <TabControl>
                     <TabItem Header="Вкладка 1" >
-                        <oxy:PlotView Model="{Binding Source={StaticResource mod} , Path=MyModel }" Grid.Row="0" Grid.Column="1" />
+                        <DockPanel>
+
+                            <StackPanel DockPanel.Dock="left" Background="red"  x:Name="panel_1"  >
+                                <oxy:PlotView  Width="300"  Height="300" x:Name="graph_1"  DockPanel.Dock="Top"   Model="{Binding Source={StaticResource DataGr} , Path=MyDataModel }" Grid.Row="0" Grid.Column="1" />
+
+                            </StackPanel>
+                            <StackPanel DockPanel.Dock="Right" Background="Blue"  x:Name="panel_2">
+                                <oxy:PlotView Width="300" Height="300" x:Name="graph_2" DockPanel.Dock="Top"   Model="{Binding Source={StaticResource mod} , Path=MyModel }" Grid.Row="0" Grid.Column="1" />
+                            </StackPanel>
+
+
+
+                        </DockPanel>
+
                     </TabItem>
                     <TabItem Header="Вкладка 2" >
-        
-                            <oxy:PlotView Width="600" Height="600" Model="{Binding Source={StaticResource DataGr} , Path=MyDataModel }" Grid.Row="0" Grid.Column="1" />
-                      
+
 
                     </TabItem>
 

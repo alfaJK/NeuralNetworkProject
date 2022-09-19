@@ -6,9 +6,45 @@
         xmlns:local="clr-namespace:NeuralNetworkUI"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="NeuralSettingWindow" Height="388" Width="534">
+        Title="NeuralSettingWindow" Height="401" Width="512">
     <Grid>
-        <Label Content="Название топологии" HorizontalAlignment="Left" Height="27" Margin="20,30,0,0" VerticalAlignment="Top" Width="207"/>
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Left" Width="175">
+                <Label Content="Название топологии" Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="207"/>
+
+                <Label Content="Путь обучающий выборки"  Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="207"/>
+
+                <Label Content="Путь тестовой выборки"  Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="207"/>
+
+                <Label Content="Название Файлов"  Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27" VerticalAlignment="Top" Width="207"/>
+
+                <Label Content="Скорость обучения"  Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  VerticalAlignment="Top" Width="207"/>
+
+                <Label Content="Количество итераций"  Margin="10 , 10 , 0 , 10" HorizontalAlignment="Left" Height="26"  VerticalAlignment="Top" Width="207"/>
+
+            </StackPanel>
+            <StackPanel x:Name="rootpanel"  DockPanel.Dock="top">
+                <TextBox  VerticalContentAlignment="Center"  Margin="0 , 10 , 0 , 10" Text="{Binding NeuralName, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="27" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+
+                <WrapPanel>
+                    <TextBox VerticalContentAlignment="Center"  Margin="0 , 10 , 0 , 10" Text="{Binding Learnfilename , UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="27" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+                    <Button Command="{Binding AddLearnFile}" Content="Выбрать" HorizontalAlignment="Left" Height="27"  Margin="10 , 0 , 0 , 0"   Width="85"/>
+
+                </WrapPanel>
+
+                <WrapPanel>
+                    <TextBox  VerticalContentAlignment="Center"  Margin="0 , 10 , 0 , 10" Text="{Binding Testfilename , UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="27"  TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+                    <Button  Command="{Binding AddTestFile}" Content="Выбрать" HorizontalAlignment="Left" Height="27" Margin="10 , 0 , 0 , 0"   Width="85"/>
+
+                </WrapPanel>
+
+                <TextBox  VerticalContentAlignment="Center"  Margin="0 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+
+                <TextBox  VerticalContentAlignment="Center"  Margin="0 , 10 , 0 , 10" HorizontalAlignment="Left" Height="27"  TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+
+                <TextBox  VerticalContentAlignment="Center" Margin="0 , 10 , 0 , 10" HorizontalAlignment="Left" Height="26"  TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
+
+            </StackPanel>
         <!--  <RichTextBox ScrollViewer.HorizontalScrollBarVisibility="Hidden">
             <RichTextBox.Resources>
                 <Style TargetType="ScrollViewer">
@@ -16,30 +52,14 @@
                 </Style>
             </RichTextBox.Resources>
         </RichTextBox> -->
-        <TextBox  VerticalContentAlignment="Center" Text="{Binding NeuralName, UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="27" Margin="186,30,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
 
-        <Label Content="Путь обучающий выборки" HorizontalAlignment="Left" Height="27" Margin="20,76,0,0" VerticalAlignment="Top" Width="207"/>
-
-        <TextBox VerticalContentAlignment="Center" Text="{Binding Learnfilename , UpdateSourceTrigger=PropertyChanged}"  HorizontalAlignment="Left" Height="27" Margin="186,76,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
-        <Button Command="{Binding AddLearnFile}" Content="Выбрать" HorizontalAlignment="Left" Height="27" Margin="420,75,0,0" VerticalAlignment="Top" Width="85"/>
-
-        <Label Content="Путь тестовой выборки" HorizontalAlignment="Left" Height="27" Margin="20,121,0,0" VerticalAlignment="Top" Width="207"/>
-        <TextBox  VerticalContentAlignment="Center" Text="{Binding Testfilename , UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="27" Margin="186,121,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
-        <Button  Command="{Binding AddTestFile}" Content="Выбрать" HorizontalAlignment="Left" Height="27" Margin="420,120,0,0" VerticalAlignment="Top" Width="85"/>
-
-        <Label Content="Название Файлов" HorizontalAlignment="Left" Height="27" Margin="20,166,0,0" VerticalAlignment="Top" Width="207"/>
-        <TextBox  VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="186,166,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
-
-        <Label Content="Скорость обучения" HorizontalAlignment="Left" Height="27" Margin="20,208,0,0" VerticalAlignment="Top" Width="207"/>
-        <TextBox  VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="186,208,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
-
-
-        <Label Content="Количество итераций" HorizontalAlignment="Left" Height="26" Margin="20,254,0,0" VerticalAlignment="Top" Width="207"/>
-        <TextBox  VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="26" Margin="186,254,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="222"/>
-
-        <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="394,314,0,0" VerticalAlignment="Top" Width="111"/>
-        <Button Content="Добавить" Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="244,314,0,0" VerticalAlignment="Top" Width="106"/>
-      
+  
+            <WrapPanel  Margin="0 , 20 , 0 , 0"  DockPanel.Dock="Bottom">
+                <Button Content="Отмена"   Command ="{Binding CannelButton}" Margin="0 , 0 , 60 , 0" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="80"/>
+                <Button Content="Добавить" IsEnabled="{Binding IsValid}" Command ="{Binding AddButton}" Height="34" Width="80"/>
+            </WrapPanel>
+    
+        </DockPanel>
 
     </Grid>
 </Window>
