@@ -40,7 +40,7 @@ class FullyConnectedLayer : public NeuralModule {
     void Activate(Tensor& output);
 
 public:
-    FullyConnectedLayer(Tensor_size size, int outputs, const std::string& activationType = "none");
+    FullyConnectedLayer(Tensor_size size, int outputs, const std::string& activationType = "sigmoid");
 
     Tensor Direct_dist(const Tensor& X) override;
     Tensor Back_dist(const Tensor& dout, const Tensor& X) override;

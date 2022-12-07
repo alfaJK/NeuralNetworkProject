@@ -6,22 +6,108 @@
         xmlns:local="clr-namespace:NeuralNetworkUI"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="ModuleSettingWindow" Height="313" Width="415">
+        Title="ModuleSettingWindow" Height="379" Width="415">
 
+    <Window.Resources>
+        <!--    <ControlTemplate x:Key="Conv_temp">
+
+            <DockPanel  Grid.ColumnSpan="2">
+                <StackPanel DockPanel.Dock="Left" Width="185">
+                    <Label Content="Функции активации" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+                    <Label Content="Размер матрицы свертки" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+                    <Label Content="Размер отступа" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+
+                </StackPanel>
+                <StackPanel  DockPanel.Dock="Top">
+
+                    <ComboBox Width="184" VerticalAlignment="Top" ItemsSource="{Binding ActivationItems}" HorizontalAlignment="Left" Margin="0 , 10 , 0 , 10" Height="24" Grid.ColumnSpan="2" />
+                    <TextBox VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="0 , 10 , 0 , 10" TextWrapping="NoWrap" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
+                    <TextBox VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="0 , 10 , 0 , 10" TextWrapping="NoWrap" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
+
+                </StackPanel>
+                <WrapPanel Margin="0 , 20 , 0 , 0"  DockPanel.Dock="Bottom">
+                    <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="0,0,45,0" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2"/>
+                    <Button Content="Добавить" Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="0,0,0,0" VerticalAlignment="Top" Width="70"/>
+                </WrapPanel>
+            </DockPanel>
+        </ControlTemplate>
+        <ControlTemplate x:Key="Pool_temp">
+
+            <DockPanel  Grid.ColumnSpan="2">
+                
+                <StackPanel DockPanel.Dock="Left" Width="185">
+                    <Label Content="Тип пуллинга" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+                    <Label Content="Размер пуллинга" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+
+                </StackPanel>
+                <StackPanel  DockPanel.Dock="Top">
+
+                    <ComboBox Width="184" VerticalAlignment="Top" ItemsSource="{Binding Poolingitems}" HorizontalAlignment="Left" Margin="0 , 10 , 0 , 10" Height="24" Grid.ColumnSpan="2" />
+                    <TextBox VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="0 , 10 , 0 , 10" TextWrapping="NoWrap" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
+
+                </StackPanel>
+                <WrapPanel Margin="0 , 20 , 0 , 0"  DockPanel.Dock="Bottom">
+                    <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="0,0,45,0" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2"/>
+                    <Button Content="Добавить" Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="0,0,0,0" VerticalAlignment="Top" Width="70"/>
+                </WrapPanel>
+            </DockPanel>
+            
+        </ControlTemplate>
+        <ControlTemplate x:Key="Fullc_temp">
+
+            <DockPanel  Grid.ColumnSpan="2">
+                <StackPanel DockPanel.Dock="Left" Width="185">
+                    <Label Content="Функции активации" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+
+                </StackPanel>
+                <StackPanel  DockPanel.Dock="Top">
+
+                    <ComboBox Width="184" VerticalAlignment="Top" ItemsSource="{Binding ActivationItems}" HorizontalAlignment="Left" Margin="0 , 10 , 0 , 10" Height="24" Grid.ColumnSpan="2" />
+
+                </StackPanel>
+                <WrapPanel Margin="0 , 20 , 0 , 0"  DockPanel.Dock="Bottom">
+                    <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="0,0,45,0" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2"/>
+                    <Button Content="Добавить" Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="0,0,0,0" VerticalAlignment="Top" Width="70"/>
+                </WrapPanel>
+            </DockPanel>
+        </ControlTemplate> -->
+        <DataTemplate DataType="{x:Type local:ConvL_ViewModel}">
+            <local:ConvL_View/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:Pool_ViewModel}">
+            <local:Pool_View/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local:Fullc_ViewModel}">
+            <local:FullC_View/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="122*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="377*"/>
             <ColumnDefinition Width="38*"/>
         </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="2" Grid.RowSpan="2">
 
-        <ComboBox Width="184" VerticalAlignment="Top" SelectedItem="{Binding MySelectedItem}" ItemsSource="{Binding ModuleItems}" HorizontalAlignment="Left" Margin="203,36,0,0" Height="24" Grid.ColumnSpan="2" />
-        <Label Content="Слой нейронной сети" HorizontalAlignment="Left" Height="27" Margin="19,36,0,0" VerticalAlignment="Top" Width="207"/>
-        <ComboBox Width="184" VerticalAlignment="Top" ItemsSource="{Binding ActivationItems}" HorizontalAlignment="Left" Margin="203,85,0,0" Height="24" Grid.ColumnSpan="2" />
-        <Label Content="Функции активации" HorizontalAlignment="Left" Height="27" Margin="19,82,0,0" VerticalAlignment="Top" Width="207"/>
-        <Label Content="Размер матрицы свертки" HorizontalAlignment="Left" Height="27" Margin="19,130,0,0" VerticalAlignment="Top" Width="207"/>
-        <TextBox VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="203,130,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-        <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="276,206,0,0" VerticalAlignment="Top" Width="111" Grid.ColumnSpan="2"/>
-        <Button Content="Добавить" Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="109,206,0,0" VerticalAlignment="Top" Width="106"/>
+            <DockPanel DockPanel.Dock="Top">
+                <StackPanel Width="185">
+                    <Label   Content="Слой нейронной сети" HorizontalAlignment="Left" Height="27" Margin="10 , 10 , 0 , 10" VerticalAlignment="Top" Width="207"/>
+                </StackPanel>
+                <StackPanel>
+                    <ComboBox Width="184" VerticalAlignment="Top"   SelectedItem="{Binding MySelectedItem}" ItemsSource="{Binding ModuleItems}" HorizontalAlignment="Left" Margin="0 , 10 , 0 , 10" Height="24" Grid.ColumnSpan="2" />
+                </StackPanel>
+                
+            </DockPanel>
+            <ContentControl Content="{Binding CurrentView}" Name="Tempcontrol" DockPanel.Dock="Top" Grid.Row="0"  />
+            <WrapPanel Margin="0 , 20 , 0 , 0"  DockPanel.Dock="Bottom">
+                <Button Content="Отмена"  Command ="{Binding CannelButton}" HorizontalAlignment="Left" Height="34" Margin="0,0,45,0" VerticalAlignment="Top" Width="70" Grid.ColumnSpan="2"/>
+                <Button Content="Добавить"   Command ="{Binding AddButton}"  HorizontalAlignment="Left" Height="34" Margin="0,0,0,0" VerticalAlignment="Top" Width="70"/>
+            </WrapPanel>
+        </DockPanel>
+
     </Grid>
 
 </Window>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"
         xmlns:local="clr-namespace:NeuralNetworkUI"
-        
+     
         xmlns:dz="http://schemas.devzest.com/presentation/docking" 
       
         mc:Ignorable="d"
@@ -67,10 +67,10 @@
                         <Button >
                             <Image Source="pack://application:,,,/icons/stop.png" MaxHeight="25"></Image>
                         </Button>
-                        <Button >
+                        <Button Click="SaveSetting">
                             <Image Source="pack://application:,,,/icons/save.png" MaxHeight="25"></Image>
                         </Button>
-                        <Button Click="button1_Click" >
+                        <Button Click="LoadSetting" >
                             <Image Source="pack://application:,,,/icons/load.png" MaxHeight="25"></Image>
                         </Button>
                     </ToolBar>
@@ -136,7 +136,7 @@
                                         <TextBlock.ContextMenu>
                                             <ContextMenu>
                                                 <MenuItem Click="MenuItem_Add" Header ="Добавить модуль"/>
-                                                <MenuItem Header ="Удалить" />
+                                          <!--      <MenuItem Click="MenuItem_Change" Header ="Изменить"/> -->
                                             </ContextMenu>
                                         </TextBlock.ContextMenu>
                                     </TextBlock>
@@ -175,13 +175,23 @@
                     <TabItem Header="Вкладка 1" >
                         <DockPanel>
 
-                            <StackPanel DockPanel.Dock="left" Background="red"  x:Name="panel_1"  >
-                                <oxy:PlotView  Width="300"  Height="300" x:Name="graph_1"  DockPanel.Dock="Top"   Model="{Binding Source={StaticResource DataGr} , Path=MyDataModel }" Grid.Row="0" Grid.Column="1" />
+                            <StackPanel DockPanel.Dock="left"  x:Name="panel_1"  >
+                                <oxy:PlotView Width="300" Height="370" x:Name="graph_3" DockPanel.Dock="Top"   Model="{DynamicResource mods2}" Grid.Row="0" Grid.Column="1" >
+
+                                </oxy:PlotView>
+                                <ProgressBar Height="50" Name="ProgressLearn"></ProgressBar>
+                                <TextBox Name="textbox1"></TextBox>
+                            </StackPanel>
+                            <StackPanel DockPanel.Dock="Right"  x:Name="panel_2">
+                               <oxy:PlotView Width="300" Height="370" x:Name="graph_2" DockPanel.Dock="Top"   Model="{DynamicResource mods}" Grid.Row="0" Grid.Column="1" >
+                
+                                </oxy:PlotView>
+                                <oxy:PlotView  Width="300"  Height="300" x:Name="graph_1"  DockPanel.Dock="Top"   Model="{DynamicResource Datamods}" Grid.Row="0" Grid.Column="1" />
+
+
 
                             </StackPanel>
-                            <StackPanel DockPanel.Dock="Right" Background="Blue"  x:Name="panel_2">
-                                <oxy:PlotView Width="300" Height="300" x:Name="graph_2" DockPanel.Dock="Top"   Model="{Binding Source={StaticResource mod} , Path=MyModel }" Grid.Row="0" Grid.Column="1" />
-                            </StackPanel>
+                       
 
 
 

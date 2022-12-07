@@ -30,21 +30,20 @@ public:
 
 class CudaTensor: public Unified {
 public:
-    float* Data;
+    double* Data;
     Tensorsize Size;
-    int height;
-    int width;
-    __host__  __device__ CudaTensor(int w, int h, int d, float* data){
-        Size.width = h;
-        Size.height = w;
+    thrust::device_vector<double> d_vec;
+    __host__  __device__ CudaTensor(int w, int h, int d, std::vector<double> data){
+        Size.width = w;
+        Size.height = h;
         Size.depth = d;
-        cudaMallocManaged(&Data, Size.width * Size.height *  Size.depth * sizeof(float));
-        cudaMemcpy(Data, data, Size.width * Size.height * Size.depth * sizeof(float), cudaMemcpyHostToDevice);
+        d_vec = thrust::device_vector<double> (data);
+        Data = thrust::raw_pointer_cast(d_vec.data());
     }
-    __host__  __device__ float GetElement(int x,int y){return Data[width * y + x];}
-    __host__  __device__ float* GetSubMatrix(int x, int y){return &Data[width * BLOCK_SIZE * y + BLOCK_SIZE * x];}
-    __host__  __device__ void SetElement(int x, int y,int data){Data[width * y + x] = data;}
-   // __host__  __device__ void PrintMatrix();
+    __host__  __device__ double GetElement(int x,int y, int d){return Data[Size.depth * Size.width * y + x * Size.depth + d];}
+    __host__  __device__ double* GetSubMatrix(int x, int y){return &Data[Size.width * BLOCK_SIZE * y + BLOCK_SIZE * x];}
+    __host__  __device__ void SetElement(int x, int y, int d , double data){Data[Size.depth * Size.width * y + x * Size.depth + d] = data;}
+
 };
 
 /*

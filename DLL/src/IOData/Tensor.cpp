@@ -46,10 +46,10 @@ std::ostream& operator<<(std::ostream& os, const Tensor& tensor) {
 			for (int j = 0; j < tensor.size.width; j++)
 				os << tensor.Tensor_Values[i * (tensor.size.depth * tensor.size.width) + j * tensor.size.depth + d] << " ";
 	
-		//	os << std::endl;
+			os << std::endl;
 		}
 
-	//	os << std::endl;
+		os << std::endl;
 	}
 	os << std::endl;
 	return os;

@@ -2,8 +2,9 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+
 void Setting::Load_Setting(const char* setting_filename) {
-    std::ifstream fout(setting_filename);
+  /*  std::ifstream fout(setting_filename);
     char Str[256];
 
     char k;
@@ -140,5 +141,37 @@ void Setting::Load_Setting(const char* setting_filename) {
         }
     }
 
-    fout.close();
+    fout.close();*/
+
+}
+
+void Setting::CopyStruct(SettingStruct *str){
+    NeuralName = (*str).NeuralName;
+    training_path = (*str).training_path;
+    learn_path = (*str).learn_path;
+    weight_path = (*str).weight_path;
+    file_name = (*str).file_name;
+    rate = (*str).rate;
+    cout_training = (*str).cout_training;
+    cout_typeset = (*str).cout_typeset;
+    cout_module = (*str).cout_module;
+    SizeImage.height = (*str).size_image;
+    SizeImage.width = (*str).size_image;
+    SizeImage.depth = 1;
+    learn = 1;
+}
+
+void Setting::CopyModuleStruct(ModuleSetting *Mstr){
+    ModuleSetting *MS = new ModuleSetting;
+    (*MS).FuncActivationName =  (*Mstr).FuncActivationName;
+    (*MS).PoolingType =  (*Mstr).PoolingType;
+    (*MS).MatrixSize = (*Mstr).MatrixSize;
+    (*MS).ModuleName = (*Mstr).ModuleName;
+    (*MS).OutputSize = (*Mstr).OutputSize;
+    (*MS).Padding =  (*Mstr).Padding;
+    (*MS).ModuleId =  (*Mstr).ModuleId;
+    (*MS).PoolScale = (*Mstr).PoolScale;
+    (*MS).FilterCount = (*Mstr).FilterCount;
+    (*MS).FilterDepth = (*Mstr).FilterDepth;
+    ModuleData.push_back(MS);
 }

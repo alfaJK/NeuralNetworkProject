@@ -135,7 +135,6 @@ void FullyConnectedLayer::Activate(Tensor& output) {
 Tensor FullyConnectedLayer::Direct_dist(const Tensor& X) {
     Tensor output(outputSize); 
 
-    
     for (int i = 0; i < outputs; i++) {
         double sum = Bias[i]; 
 
@@ -159,8 +158,6 @@ Tensor FullyConnectedLayer::Back_dist(const Tensor& dout, const Tensor& X) {
    
     for (int i = 0; i < outputs; i++)
         df(0, 0, i) *= dout(0,0,i);
-
-    
     for (int i = 0; i < outputs; i++) {
         for (int j = 0; j < inputs; j++)
             d_Weight(i, j) = df(0, 0, i) * X(0, 0, i);

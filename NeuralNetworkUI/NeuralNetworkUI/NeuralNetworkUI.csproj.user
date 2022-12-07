@@ -7,14 +7,35 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ActiveL_View.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConvL_View.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FullC_View.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ModuleSettingWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="NeuralSettingWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pool_View.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ActiveL_View.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConvL_View.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FullC_View.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -22,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="NeuralSettingWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pool_View.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

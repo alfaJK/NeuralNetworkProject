@@ -25,6 +25,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Security.Cryptography;
 using static System.Windows.Forms.LinkLabel;
 using System.Reflection.PortableExecutable;
+using Microsoft.VisualBasic.Devices;
+using Newtonsoft.Json;
+using OxyPlot.Series;
 
 namespace NeuralNetworkUI
 {
@@ -39,7 +42,7 @@ namespace NeuralNetworkUI
         {
            
       
-            switch (ModuleName)
+          /*  switch (ModuleName)
             {
                 case "Conv_L":
                     ItemName = "Сверточный слой";
@@ -51,7 +54,8 @@ namespace NeuralNetworkUI
                     ItemName = "Полносвязный слой";
                     break;
 
-            }
+            }*/
+                ItemName = ModuleName;
              Items = new ObservableCollection<CustomTreeItem>();
         }
         public ObservableCollection<CustomTreeItem> FindDirectParent(ObservableCollection<CustomTreeItem> _items)
@@ -75,28 +79,44 @@ namespace NeuralNetworkUI
     public partial class MainWindow : System.Windows.Window
     {
         private string FileName;
-        private ObservableCollection<string> ModuleName;
+        public double MCC;
+        public double TPR;
+        public double FPR;
+        private List<ModuleSetting> _ModuleSettings;
+        public ObservableCollection<NeuralSetting> SetCollection;
         NeuralLibControl neuralLibControl;
-        Graph grap;
+        Graph graph;
+        ROCGraph graph2;
+        double x;
+        double error;
         DataGraph dataGraph;
         System.Windows.Threading.DispatcherTimer dispatcherTimer;
         public ObservableCollection<CustomTreeItem> categoriesList { get; set; }
         public MainWindow()
         {
-            ModuleName = new ObservableCollection<string>();
+            x = 0;
+            error = 0;
+            TPR = 0;
+            FPR = 0;
             dataGraph = new DataGraph();
-            grap = new Graph();
+            graph  = new Graph();
+            graph2 = new ROCGraph();
             InitializeComponent();
             this.SizeChanged += OnWindowSizeChanged;
-            
+            SetCollection = new ObservableCollection<NeuralSetting>();
+            _ModuleSettings = new List<ModuleSetting>();
             dispatcherTimer = new System.Windows.Threading.DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(dispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 1);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 10);
             dispatcherTimer.Start();
             categoriesList = new ObservableCollection<CustomTreeItem>() { };
-            
+            this.Resources.Add("mods", graph.MyModel);
+            this.Resources.Add("mods2", graph2.MyModel);
+            this.Resources.Add("Datamods", dataGraph.MyDataModel);
             this.DataContext = this;
+            ProgressLearn.Maximum = 400;
         }
+
 
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
@@ -104,8 +124,36 @@ namespace NeuralNetworkUI
             {
                 if (neuralLibControl.IsInit)
                 {
-                    //TextBox1.Clear();
-                    // TextBox1.AppendText(neuralLibControl.GetProgressData().ToString());
+
+                    textbox1.Clear();
+
+                    textbox1.AppendText(neuralLibControl.GetProgressData().ToString());
+                    ProgressLearn.Value = neuralLibControl.GetProgressData();
+                    if (x != neuralLibControl._GetEpoh())
+                    {
+                        x = neuralLibControl._GetEpoh();
+                       // TextBox2.Clear();
+                        error = neuralLibControl._GetError();
+                        //TextBox2.AppendText(error.ToString());
+
+                        graph.UpdatePoints(x, error);
+                        graph_2.InvalidatePlot(true);
+                        
+                        neuralLibControl._GetConfMatrix();
+                     /*   try{ TPR = (double)neuralLibControl.ConfMatrixData[0] / (neuralLibControl.ConfMatrixData[0] + neuralLibControl.ConfMatrixData[1]); }
+                        catch (DivideByZeroException) { TPR = 0;}
+                        try { FPR = (double)neuralLibControl.ConfMatrixData[2] / (neuralLibControl.ConfMatrixData[2] + neuralLibControl.ConfMatrixData[3]); }
+                        catch (DivideByZeroException) { FPR = 0; }*/
+                        graph2.UpdatePoints(neuralLibControl._GetSpec(), neuralLibControl._GetSens());
+                        graph_3.InvalidatePlot(true);
+
+                        dataGraph.UpdatePoints(neuralLibControl.ConfMatrixData);
+                        graph_1.InvalidatePlot(true);
+
+                    }
+                    
+
+
                 }
 
             }
@@ -114,14 +162,18 @@ namespace NeuralNetworkUI
 
         protected void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
         {
-           treeView.Height = (e.NewSize.Height - 25)/2;
+            treeView.Height = (e.NewSize.Height - 25)/2;
             treeView1.Height = (e.NewSize.Height - 25)/2;
             panel_1.Width = (e.NewSize.Width - leftbar.Width) / 2;
-            panel_2.Width = (e.NewSize.Width - leftbar.Width) / 2;
-            graph_1.Width = panel_1.Width;
+            panel_2.Width = (e.NewSize.Width - leftbar.Width) / 2.2;
+            graph_1.Width = panel_2.Width;
+            graph_1.Height = panel_2.Width/2;
+
             graph_2.Width = panel_2.Width;
-            //   panel_1.Height = (e.NewSize.Height - topbar.Height) / 2;
-            //   panel_2.Height = (e.NewSize.Height - leftbar.Height) / 2;
+
+            graph_3.Width = panel_1.Width;
+            graph_3.Height = panel_1.Width;
+
         }
 
         private void MenuItem_Add(object sender, RoutedEventArgs e)
@@ -130,35 +182,26 @@ namespace NeuralNetworkUI
             ModuleSettingWindow moduleSettingWindow = new ModuleSettingWindow();
             //  moduleSettingWindow.Show();
             bool? diaRes = moduleSettingWindow.ShowDialog();
-            if (diaRes.HasValue && diaRes.Value) { 
-
+            if (diaRes.HasValue && diaRes.Value) {
+                moduleSettingWindow.mv.GetSettings();
                 modName += moduleSettingWindow.mv.MySelectedItem;
-
+                _ModuleSettings.Add(moduleSettingWindow.mv._ModuleSetting);
                 CustomTreeItem item = ((sender as MenuItem).DataContext) as CustomTreeItem;
-
-                item.Items.Add(new CustomTreeItem() { ItemName = modName });
-
-
-
+                
+                item.Items.Add(new CustomTreeItem() { ItemName = moduleSettingWindow.mv._ModuleSetting.ModuleName });
             }
 
         }
 
         private void NeuralSetting_Add(object sender, RoutedEventArgs e)
         {
-            string NeurName = "";
-
             NeuralSettingWindow neuralsettingwindow = new NeuralSettingWindow();
-
-            //  moduleSettingWindow.Show();
             bool? diaRes = neuralsettingwindow.ShowDialog();
             if (diaRes.HasValue && diaRes.Value)
             {
-                NeurName += neuralsettingwindow.ns.NeuralName;
-
-                //modName += neuralsettingwindow.nv.MySelectedItem;
-                categoriesList.Add(new CustomTreeItem() { ItemName = NeurName, Items = new ObservableCollection<CustomTreeItem>() });
-         //       categoriesList.Add(new CustomTreeItem(NeurName));
+                SetCollection.Clear();
+                SetCollection.Add(neuralsettingwindow.ns.NeuralSettingStruct);
+                categoriesList.Add(new CustomTreeItem() { ItemName = SetCollection[0].NeuralName, Items = new ObservableCollection<CustomTreeItem>() });
 
             }
         }
@@ -166,71 +209,56 @@ namespace NeuralNetworkUI
 
         private void StartLearn(object sender, RoutedEventArgs e)
         {
-            if (FileName != null && categoriesList != null)
-            {
-                neuralLibControl = new NeuralLibControl();
-
+            if(SetCollection.Count != 0) {
+                neuralLibControl = new NeuralLibControl(SetCollection[0] , _ModuleSettings.ToArray());
             }
             else MessageBox.Show("Настройки нейронной сети не установлены");
         }
-        private void button1_Click(object sender, RoutedEventArgs e)
+
+
+        private void SaveSetting(object sender, RoutedEventArgs e)
         {
-            // Create OpenFileDialog 
-            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
-            dlg.DefaultExt = ".txt";
-            dlg.Filter = "TXT Files (*.txt)|*.txt";
-            Nullable<bool> result = dlg.ShowDialog();
-            if (result == true)
+            System.Windows.Forms.FolderBrowserDialog dlg = new FolderBrowserDialog();
+            DialogResult result = dlg.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(dlg.SelectedPath))
             {
-                FileName = dlg.FileName;
-                OpenFile(FileName);
-                categoriesList.Clear();
+                using (StreamWriter file = File.CreateText(dlg.SelectedPath + "\\NeuralSetting.json"))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, SetCollection[0]);
+                }
+                using (StreamWriter file = File.CreateText(dlg.SelectedPath + "\\ModSetting.json"))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(file, _ModuleSettings);
+                }
+ 
+            }
+        }
+
+        private void LoadSetting(object sender, RoutedEventArgs e)
+        {
+
+            categoriesList.Clear();
+
+            System.Windows.Forms.FolderBrowserDialog dlg = new FolderBrowserDialog();
+            DialogResult result = dlg.ShowDialog();
+            if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(dlg.SelectedPath))
+            {
+                using (StreamReader file = File.OpenText(dlg.SelectedPath + "\\NeuralSetting.json"))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    NeuralSetting NeuralJson = (NeuralSetting)serializer.Deserialize(file, typeof(NeuralSetting));
+                    SetCollection.Clear();
+                    SetCollection.Add(NeuralJson);
+                }
                 ObservableCollection<CustomTreeItem> ModCollection = new ObservableCollection<CustomTreeItem>();
-             //   categoriesList.Add(new CustomTreeItem() { ItemName = "Neural Topology", Items = new ObservableCollection<CustomTreeItem>() });
-
-
-                foreach (var item in ModuleName)
-                {
-                    if(item != "Active_L")
-                        ModCollection.Add(new CustomTreeItem(item));
-                   // categoriesList.Add(new CustomTreeItem(item));
-                }
-                  categoriesList.Add(new CustomTreeItem() { ItemName = "Neural Topology", Items = ModCollection });
+                _ModuleSettings.Clear();
+                _ModuleSettings = JsonConvert.DeserializeObject<List<ModuleSetting>>(File.ReadAllText(dlg.SelectedPath + "\\ModSetting.json"));
+                for(int i = 0; i< _ModuleSettings.Count; i++)  
+                    ModCollection.Add(new CustomTreeItem(_ModuleSettings[i].ModuleName));
+                 categoriesList.Add(new CustomTreeItem() { ItemName = SetCollection[0].NeuralName, Items = ModCollection });
             }
         }
-        private void OpenFile(string filename)
-        {
-            string line = "";
-            try
-            {
-                //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader(filename);
-
-                line = sr.ReadLine();
-                while (line != null)
-                {
-                    if (line.Contains("neural-architecture"))
-                    {
-                        char[] separators = new char[] { '<', ',' };
-                        string[] subs = line.Split(separators, StringSplitOptions.RemoveEmptyEntries);
-                        for (var i = 1; i < subs.Length - 1; i++) ModuleName.Add(subs[i]);
-                        line = sr.ReadLine();
-                    }
-                    line = sr.ReadLine();
-                }
-                //close the file
-                sr.Close();
-             
-            }
-            catch (Exception e)
-            {
-            }
-            finally
-            {
-            }
-        }
-
-
-
     }
 }

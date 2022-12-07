@@ -1,7 +1,7 @@
 #include "IOData/Images.h"
 #include "CImg/CImg.h"
-
-
+#include <filesystem>
+#include <sstream>
 
 /*Image::Image(Tensor_size size, std::string filename) :NewImageBits(size) {
 	//Palitra = new BYTE(sizeN);
@@ -50,4 +50,24 @@ Image::Image(Tensor_size size, const char* filename):NewImageBits(size) {
 
 	}
 
+}
+Image::Image(std::string filename , Tensor *InputBits ):NewImageBits(*InputBits){CreateImage(filename);}
+
+void Image::CreateImage(std::string filename){
+	for (int d = 0; d < NewImageBits.size.depth; d++) {
+			std::vector<unsigned short> dest(NewImageBits.size.height * NewImageBits.size.width, 0);
+		for (int h = 0; h < NewImageBits.size.height; h++) {
+			for (int w = 0; w < NewImageBits.size.width; w++) {
+				NewImageBits(h, w, d) = NewImageBits(h, w, d) * 255.0;
+				dest[h * NewImageBits.size.height + w] = (unsigned short)NewImageBits(h, w, d);
+			}
+
+		}
+	std::stringstream nums;
+    nums << d + 1;
+    std::string p = "img\\" + filename + "_" +nums.str() + ".jpg";
+	auto hold_arr = &dest[0];
+	cimg_library::CImg<unsigned short> img(hold_arr, NewImageBits.size.height, NewImageBits.size.height);
+    img.save_png(p.c_str());
+	}
 }

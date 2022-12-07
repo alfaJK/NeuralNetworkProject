@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nbXYbmDohpV9yrT2pYLA+scnSqLfD5GZoaWt5t722kpEEdpygURJqmjuDWUxMjtt+c9Rf59bcMaCyISkjQDlfg==",
+  "dgSpecHash": "jxK0raj49YjcwVwvyyJg8/WU2cuzEDOkflczRTnNG35iRCl8/AG6TesdtCEdxsnNSRegLH9lEi8P43CgSJqKnw==",
   "success": true,
   "projectFilePath": "D:\\GIT_RPS\\AnyProjects\\NeuralNetworkProject\\NeuralNetworkUI\\NeuralNetworkUI\\NeuralNetworkUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Даниил\\.nuget\\packages\\devzest.wpfdocking\\3.0.0\\devzest.wpfdocking.3.0.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\dockpanelsuite\\3.1.0\\dockpanelsuite.3.1.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\expression.blend.sdk.wpf\\1.0.1\\expression.blend.sdk.wpf.1.0.1.nupkg.sha512",
+    "C:\\Users\\Даниил\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.core\\2.1.0\\oxyplot.core.2.1.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.wpf\\2.1.0\\oxyplot.wpf.2.1.0.nupkg.sha512",
     "C:\\Users\\Даниил\\.nuget\\packages\\oxyplot.wpf.shared\\2.1.0\\oxyplot.wpf.shared.2.1.0.nupkg.sha512",

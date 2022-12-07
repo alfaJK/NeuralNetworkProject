@@ -83,3 +83,12 @@ D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\
 D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\ModuleSettingWindow.baml
 D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\NeuralSettingWindow.g.cs
 D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\NeuralSettingWindow.baml
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\ConvL_View.g.cs
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\Pool_View.g.cs
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\ConvL_View.baml
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\Pool_View.baml
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\FullC_View.g.cs
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\FullC_View.baml
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\ActiveL_View.g.cs
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\obj\Debug\net6.0-windows\ActiveL_View.baml
+D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

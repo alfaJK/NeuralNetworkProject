@@ -41,4 +41,6 @@ public:
 	Tensor NewImageBits;
 public:
 	Image(Tensor_size size , const char* filename);
+	Image(std::string filename, Tensor *InputBits );
+	void CreateImage(std::string filename);
 };

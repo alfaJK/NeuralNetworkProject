@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\GIT_RPS\AnyProjects\NeuralNetworkProject\NeuralNetworkUI\NeuralNetworkUI\App.xaml
-3958674400
+7483644294
 
-12-1985744891
-209535682726
-MainWindow.xaml;ModuleSettingWindow.xaml;NeuralSettingWindow.xaml;
+20923324148
+210-178124144
+ActiveL_View.xaml;ConvL_View.xaml;FullC_View.xaml;MainWindow.xaml;ModuleSettingWindow.xaml;NeuralSettingWindow.xaml;Pool_View.xaml;
 
-True
+False
 

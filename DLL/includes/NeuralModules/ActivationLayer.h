@@ -1,9 +1,12 @@
 #pragma once
 #include "IOData/Tensor.h"
 #include "NeuralModules/Neural_Module.h"
+#include "CUDA/CudaTensor.h"
+#include "CUDA/CudaModuleCalc.h"
 
 class ActivationLayer : public NeuralModule {
 public:
+	int tt;
     Tensor_size size;
 	ActivationLayer(Tensor_size size);
     Tensor Direct_dist(const Tensor& X) override;

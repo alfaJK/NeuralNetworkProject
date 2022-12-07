@@ -16,13 +16,14 @@ private:
 
 	Tensor_size InputSize;
 	Tensor_size OutputSize;
-
+	
 	std::vector<double> Bias; 
 	std::vector<double> d_Bias;
 	int size_f; 
 	int count_f;  
 	int depth_f; 
 	int Padding; 
+	int tt;
 	int Step = 1;
 public:
 	ConvL(Tensor_size size ,int size_f , int count_f, int depth_f, int Padding);

@@ -21,14 +21,21 @@ public:
 	Setting* Neural_setting;
 	Image* InitImage;
 	int t;
+	std::vector <int> num_buf;
+	double spec = 0;
+    double sens = 0;
+	int epoh = 0;
 	double pr = 0;
+	int* ConfMatrix;
+	double error = 0;
 	int Metrics[3];
 	const char* setting_filename;
 	int testnum;
 	bool isInit;
 public:
-	Neural(const char* setting_filename);
+	Neural();
 	~Neural();
+	void InitNeural();
 	void Start();
 	void Learn();
 	void setcur(int x, int y);
